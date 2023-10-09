@@ -1,0 +1,50 @@
+body {
+    background-image: url('../Images/home.jpg');
+    background-size: cover; /* This makes the image cover the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: fixes the background image */
+}
+
+nav {
+    background-color: transparent;
+    overflow: hidden;
+}
+  
+ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    display: inline; /* Display list items horizontally */
+    margin-inline: 10px;
+    margin-block: 10px;
+}
+
+/* Style links */
+a {
+    text-decoration: none; /* Remove underline */
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 20px;
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+}
+
+/* Change link color on hover */
+a:hover {
+    background-color: #fff;
+    color: #4b4b4b;
+    padding: 20px 20px; /* Add padding to make it clickable */
+    background-image: radial-gradient(ellipse at center, #fff 80%, transparent 40%); /* Fading oval background on hover */
+    background-size: 150% 150%; /* Increase the size to make the fading effect */
+}
+
+/* Style just for RSVP button */
+li.rsvp {
+    margin-inline: 10px;
+    margin-block: 10px;
+    margin-left: auto; /* Push the RSVP tab to the right */
+}
