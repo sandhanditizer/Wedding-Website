@@ -1,50 +1,59 @@
+/* Reset default margin and padding on body */
 body {
-    background-image: url('../Images/home.jpg');
-    background-size: cover; /* This makes the image cover the entire viewport */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Optional: fixes the background image */
-}
-
-nav {
-    background-color: transparent;
-    overflow: hidden;
-}
-  
-ul {
-    list-style-type: none; /* Remove bullet points from the list */
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+/* Style the Home section to cover the entire viewport height */
+#home {
+    height: 100vh;
+    background-color: #FAF1E6; /* Change the background color to your preference */
+    text-align: center; /* Center text vertically and horizontally */
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-li {
-    display: inline; /* Display list items horizontally */
-    margin-inline: 10px;
-    margin-block: 10px;
+/* Style the Our Story section to cover the entire viewport height and allow scrolling if necessary */
+#story {
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
+    background-color: #FDFAF6; /* Change the background color to your preference */
+    padding: 20px; /* Add padding for better readability */
 }
 
-/* Style links */
-a {
-    text-decoration: none; /* Remove underline */
-    color: #fff;
-    font-weight: bold;
-    padding: 20px 20px;
-    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+/* Reset default margin and padding on the ul and li elements */
+ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-/* Change link color on hover */
-a:hover {
-    background-color: #fff;
-    color: #4b4b4b;
-    padding: 20px 20px; /* Add padding to make it clickable */
-    background-image: radial-gradient(ellipse at center, #fff 80%, transparent 40%); /* Fading oval background on hover */
-    background-size: 150% 150%; /* Increase the size to make the fading effect */
+/* Style the navigation bar */
+header {
+    background-color: #FAF1E6; /* Background color for the navigation bar */
+    color: #333; /* Text color */
+    padding: 10px 0; /* Add some padding to the top and bottom */
 }
 
-/* Style just for RSVP button */
-li.rsvp {
-    margin-inline: 10px;
-    margin-block: 10px;
-    margin-left: auto; /* Push the RSVP tab to the right */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    text-align: center; /* Center-align the navigation links */
+}
+
+nav li {
+    display: inline; /* Display list items inline (horizontally) */
+    margin: 0 20px; /* Add some spacing between navigation items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Text color for links */
+    font-weight: bold; /* Bold font for links */
+    font-size: 18px; /* Font size for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ff6600; /* Change text color on hover */
 }
