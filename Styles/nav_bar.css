@@ -1,30 +1,36 @@
 /* Style the navigation bar */
 header {
-    background-color: #FAF1E6; /* Background color for the navigation bar */
-    color: #333; /* Text color */
-    padding: 10px 0; /* Add some padding to the top and bottom */
+    background: transparent; /* Transparent with some opacity */
+    color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    backdrop-filter: blur(15px); /* Add blur to the background */
 }
 
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    text-align: center; /* Center-align the navigation links */
+    list-style-type: none;
+    text-align: center;
 }
 
 nav li {
-    display: inline; /* Display list items inline (horizontally) */
-    margin: 0 20px; /* Add some spacing between navigation items */
+    display: inline;
+    margin: 0 20px;
 }
 
 nav a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #333; /* Text color for links */
-    font-weight: bold; /* Bold font for links */
-    font-size: 18px; /* Font size for links */
-    transition: color 0.3s; /* Smooth color transition on hover */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ff6600; /* Change text color on hover */
+    color: #ff6600;
 }
 
 /* Style the dropdown menu */
@@ -32,26 +38,38 @@ nav a:hover {
     display: none;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     width: 100%;
-    top: 0%; /* Position it below the parent */
-    left: 0; /* Align it with the left side of the parent */
-    z-index: 1; /* Ensure the dropdown appears above other content */
+    top: 0;
+    left: 0;
+    z-index: 1;
     text-align: center;
 }
 
 /* Style the links within the dropdown menu */
 .dropdown-content li {
-    padding: 5px 0px;
-    display: block; /* Make list items block elements */
+    padding: 5px 0;
+    display: block;
 }
 
 /* Adjust styles for the Information tab */
 nav li.dropdown {
-    position: relative; /* Ensure relative positioning for the dropdown */
+    position: relative;
 }
 
 /* Style the dropdown content when hovering over the Information tab */
 nav li.dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Styling for the sticky navigation bar */
+header.sticky {
+    background: rgba(250, 241, 230, 0.8); /* Transparent with some opacity */
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for the sticky navigation bar, if needed */
+header.sticky nav a {
+    color: #333; /* Example: Change link color in the sticky state */
 }

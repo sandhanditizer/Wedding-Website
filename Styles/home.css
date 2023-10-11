@@ -14,9 +14,38 @@ ul, li {
 #home {
     height: 100vh;
     background-color: #FAF1E6; /* Change the background color to your preference */
-    text-align: center; /* Center text vertically and horizontally */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Horizontally align items to space between */
+    align-items: center; /* Vertically center items */
+    padding: 0 20px; /* Add some padding for better spacing */
+    flex-direction:row; /* Horizontal layout */
+
+    /* Center text vertically within the left side */
+    text-align: left;
+}
+
+/* Style the slideshow container on the right side */
+.slideshow-container {
+    width: 50%;
+    height: 70%; /* Set the height to 100% to cover the entire container */
+    display: flex;
+    padding: 20px; /* Add padding for spacing */
+    position: relative; /* Required for absolute positioning of images */
+    overflow: hidden; /* Hide overflowing images */
+}
+
+/* Style individual slides within the slideshow container */
+.slide {
+    width: 90%;
+    height: 90%; /* Set the height to 100% to cover the entire container */
+    object-fit: contain; /* Maintain the aspect ratio of the images */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s; /* Smooth fade transition for 1 second */
+    left: 100px; /* Keep the images on the left side of the container */
+}
+
+/* Style the first slide to be visible (adjust class or index as needed) */
+.slide:first-child {
+    opacity: 1;
 }
