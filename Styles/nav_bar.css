@@ -1,0 +1,57 @@
+/* Style the navigation bar */
+header {
+    background-color: #FAF1E6; /* Background color for the navigation bar */
+    color: #333; /* Text color */
+    padding: 10px 0; /* Add some padding to the top and bottom */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    text-align: center; /* Center-align the navigation links */
+}
+
+nav li {
+    display: inline; /* Display list items inline (horizontally) */
+    margin: 0 20px; /* Add some spacing between navigation items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Text color for links */
+    font-weight: bold; /* Bold font for links */
+    font-size: 18px; /* Font size for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #ff6600; /* Change text color on hover */
+}
+
+/* Style the dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    top: 0%; /* Position it below the parent */
+    left: 0; /* Align it with the left side of the parent */
+    z-index: 1; /* Ensure the dropdown appears above other content */
+    text-align: center;
+}
+
+/* Style the links within the dropdown menu */
+.dropdown-content li {
+    padding: 5px 0px;
+    display: block; /* Make list items block elements */
+}
+
+/* Adjust styles for the Information tab */
+nav li.dropdown {
+    position: relative; /* Ensure relative positioning for the dropdown */
+}
+
+/* Style the dropdown content when hovering over the Information tab */
+nav li.dropdown:hover .dropdown-content {
+    display: block;
+}
