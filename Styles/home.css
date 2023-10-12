@@ -1,51 +1,32 @@
 /* Reset default margin and padding on body */
 body {
-    margin: 0;
-    padding: 0;
+    background-image: url('../Images/homescreen.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-/* Reset default margin and padding on the ul and li elements */
-ul, li {
-    margin: 0;
-    padding: 0;
-}
 
 /* Style the Home section to cover the entire viewport height */
 #home {
     height: 100vh;
-    background-color: #FAF1E6; /* Change the background color to your preference */
-    display: flex;
-    justify-content: space-between; /* Horizontally align items to space between */
-    align-items: center; /* Vertically center items */
-    padding: 0 20px; /* Add some padding for better spacing */
-    flex-direction:row; /* Horizontal layout */
-
-    /* Center text vertically within the left side */
-    text-align: left;
+    margin-top: 120px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
 }
 
-/* Style the slideshow container on the right side */
-.slideshow-container {
-    width: 50%;
-    height: 70%; /* Set the height to 100% to cover the entire container */
-    display: flex;
-    padding: 20px; /* Add padding for spacing */
-    position: relative; /* Required for absolute positioning of images */
-    overflow: hidden; /* Hide overflowing images */
+#home h1 {
+    font-size: 3rem; /* Adjust the font size to your preference */
+    color: #f1ede6; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* Style individual slides within the slideshow container */
-.slide {
-    width: 90%;
-    height: 90%; /* Set the height to 100% to cover the entire container */
-    object-fit: contain; /* Maintain the aspect ratio of the images */
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s; /* Smooth fade transition for 1 second */
-    left: 100px; /* Keep the images on the left side of the container */
-}
-
-/* Style the first slide to be visible (adjust class or index as needed) */
-.slide:first-child {
-    opacity: 1;
+#home h2 {
+    font-size: 2rem; /* Adjust the font size to your preference */
+    color: #f1ede6; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
 }

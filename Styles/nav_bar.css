@@ -1,8 +1,7 @@
 /* Style the navigation bar */
 header {
     background: transparent; /* Transparent with some opacity */
-    color: #333;
-    padding: 10px;
+    padding-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,58 +17,17 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #5c5442;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ff6600;
-}
-
-/* Style the dropdown menu */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    text-align: center;
-}
-
-/* Style the links within the dropdown menu */
-.dropdown-content li {
-    padding: 5px 0;
-    display: block;
-}
-
-/* Adjust styles for the Information tab */
-nav li.dropdown {
-    position: relative;
-}
-
-/* Style the dropdown content when hovering over the Information tab */
-nav li.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Styling for the sticky navigation bar */
-header.sticky {
-    background: rgba(250, 241, 230, 0.8); /* Transparent with some opacity */
-    color: #333;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Additional styles for the sticky navigation bar, if needed */
-header.sticky nav a {
-    color: #333; /* Example: Change link color in the sticky state */
+    color: #a74d00;
 }
