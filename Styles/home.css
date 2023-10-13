@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Wedding';
+    src: url('../Fonts/Wedding.otf') format('otf'),
+    url('../Fonts/Wedding.otf') format('woff'),
+    url('../Fonts/Wedding.otf') format('woff2');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,30 +18,27 @@ body {
     background-attachment: fixed;
     background-position: center 70%;
     border: 40px solid #fff;
-    border-radius: 60px;
-    
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text */
 }
 
 #home h1, #home h2 {
     opacity: 0;
     color: #f1ede6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center text */
+    font-family: 'Wedding';
 }
 
 #home h1 {
     transition: opacity 1.2s ease-in-out 1.2s;
-    font-size: 5.5rem;
+    font-size: 10rem;
     margin-top: 120px;
     margin-bottom: 0px;
 }
 
 #home h2 {
     transition: opacity 2.5s ease-in-out 2.5s;
-    font-size: 3rem;
-    margin-top: 20px;
+    font-size: 4rem;
+    margin-top: 10px;
 }
 
 #home.h1-visible h1, #home.h2-visible h2 {
@@ -45,14 +49,14 @@ body {
 
 @media (max-width: 500px) {
     #home {
-        height: calc(100vh - 40px);
+        height: 100vh;
         border: 0px;
         border-radius: 0px;
         background-position: 10% center;
     }
 
     #home h1 {
-        font-size: 2.3rem;
+        font-size: 5rem;
         text-shadow: none;
         margin-top: 0px;
         padding-top: 140px;
@@ -60,7 +64,7 @@ body {
     }
 
     #home h2 {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         text-shadow: none;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
