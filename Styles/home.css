@@ -1,32 +1,67 @@
-/* Reset default margin and padding on body */
 body {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    height: calc(100vh - 80px); /* Shrink the bottom of the image up */
     background-image: url('../Images/homescreen.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
-}
-
-
-/* Style the Home section to cover the entire viewport height */
-#home {
-    height: 100vh;
-    margin-top: 120px;
+    background-position: center 70%;
+    border: 40px solid #fff;
+    border-radius: 60px;
+    
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     text-align: center; /* Center text */
 }
 
+#home h1, #home h2 {
+    opacity: 0;
+    color: #f1ede6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 #home h1 {
-    font-size: 3rem; /* Adjust the font size to your preference */
-    color: #f1ede6; /* Text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    transition: opacity 1.2s ease-in-out 1.2s;
+    font-size: 5.5rem;
+    margin-top: 120px;
+    margin-bottom: 0px;
 }
 
 #home h2 {
-    font-size: 2rem; /* Adjust the font size to your preference */
-    color: #f1ede6; /* Text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
+    transition: opacity 2.5s ease-in-out 2.5s;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+#home.h1-visible h1, #home.h2-visible h2 {
+    opacity: 1; /* Show the elements */
+}
+
+/* -------------------------- Smaller devices ----------------------------*/
+
+@media (max-width: 500px) {
+    #home {
+        height: calc(100vh - 40px);
+        border: 0px;
+        border-radius: 0px;
+        background-position: 10% center;
+    }
+
+    #home h1 {
+        font-size: 2.3rem;
+        text-shadow: none;
+        margin-top: 0px;
+        padding-top: 140px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #home h2 {
+        font-size: 1.7rem;
+        text-shadow: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 }

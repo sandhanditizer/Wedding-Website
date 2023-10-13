@@ -1,13 +1,12 @@
-/* Style the navigation bar */
-header {
-    background: transparent; /* Transparent with some opacity */
-    padding-top: 20px;
+nav {
+    background: transparent;
+    padding: 5px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    backdrop-filter: blur(15px); /* Add blur to the background */
+    backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -24,10 +23,30 @@ nav a {
     text-decoration: none;
     color: #5c5442;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     transition: color 0.3s;
 }
 
 nav a:hover {
     color: #a74d00;
+}
+
+/* -------------------------- Smaller devices ----------------------------*/
+
+@media (max-width: 500px) {
+    nav {
+        padding: 5px;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
 }

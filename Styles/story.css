@@ -1,19 +1,60 @@
-/* Reset default margin and padding on body */
 body {
     margin: 0;
     padding: 0;
 }
 
-/* Reset default margin and padding on the ul and li elements */
 ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Style the Our Story section to cover the entire viewport height and allow scrolling if necessary */
 #story {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
-    background-color: #FDFAF6; /* Change the background color to your preference */
-    padding: 20px; /* Add padding for better readability */
+    background-color: #f2efe8; /* Change the background color to your preference */
+    padding: 20px; /* Add padding for better readability *//
+}
+
+#story h2 {
+    color: #5c5442;
+    font-size: 3rem;
+}
+
+#story p {
+    font-size: 1.8rem;
+    max-width: 40%; /* Adjust the width as needed */
+    text-align: left;
+    margin-left: auto; /* Push the paragraph to the right */
+    margin-right: 200px;
+    padding: 20px;
+
+    border: 2px solid #a74d00;
+    background-color: #f7f5ee;
+}
+
+
+@media (max-width: 500px) {
+    #story {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    #story h2 {
+        padding-top: 20px;
+        font-size: 2rem; /* Reduce font size for headers */
+        margin-bottom: 0;
+    }
+
+    #story p {
+        font-size: 1.4rem; /* Reduce font size for paragraphs */
+        max-width: 100%; /* Allow paragraphs to occupy full width */
+        text-align: center; /* Reset text alignment */
+        margin-left: 0; /* Reset left margin */
+        margin-right: 0; /* Reset right margin */
+        padding: 20px; /* Reduce padding for paragraphs */
+
+        border: 1px solid #a74d00;
+        border-left: 2px solid #a74d00; /* Add left border */
+    }
 }
