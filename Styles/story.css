@@ -1,16 +1,18 @@
 #story {
     display: flex;
     flex-direction: column;
-    background-color: #f2efe8; /* Change the background color to your preference */
-    padding: 40px; /* Add padding for better readability */
+    background-color: #f2efe8;
+    padding: 40px; 
+    padding-top: 20px;
+
 }
 
 #story h2 {
     color: #5c5442;
     font-size: 6rem;
     font-family: 'Wedding';
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #story p {
@@ -18,7 +20,7 @@
     max-width: 55%; /* Adjusts the width */
     text-align: center; /* Center the text */
     padding: 20px;
-    box-shadow: 0 0 10px rgba(167, 77, 0, 0.7);
+    box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
     /* border: 2px solid #a74d00; */
     background-color: #fdfcfa;
     margin-right: 100px
@@ -35,7 +37,7 @@
     height: auto; /* Set the desired height for your arch */
     background: transparent;
     /* border: 3px solid #a74d00; */
-    box-shadow: 0 0 10px rgba(167, 77, 0, 0.7);
+    box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
     border-top-left-radius: 200px 200px; /* Adjust the radii to create an arch shape */
     border-top-right-radius: 200px 200px;
     margin: auto;
@@ -48,19 +50,22 @@
 
     #story h2 {
         padding-top: 0px;
-        font-size: 4rem; /* Reduce font size for headers */
+        font-size: 3.5rem; /* Reduce font size for headers */
         margin-bottom: 0;
+        text-align: center;
     }
 
     #story p {
         font-size: 1.4rem; /* Reduce font size for paragraphs */
         max-width: 100%; /* Allow paragraphs to occupy full width */
         text-align: center; /* Reset text alignment */
-        margin-left: 0; /* Reset left margin */
-        margin-right: 0; /* Reset right margin */
-        padding: 20px; /* Reduce padding for paragraphs */
+        margin: 10px; /* Reset left margin */
 
         border: 1px solid #a74d00;
         border-left: 2px solid #a74d00; /* Add left border */
+    }
+
+    .arch-frame {
+        display: none;
     }
 }

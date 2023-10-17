@@ -1,12 +1,13 @@
 nav {
     background: transparent;
-    padding: 9px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 
 nav ul {
@@ -22,7 +23,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #5c5442;
+    color: #3e220b;
     font-size: 20px;
     transition: color 0.3s;
     width: 150px;
@@ -32,6 +33,10 @@ nav a {
 nav a:hover {
     color: #a74d00;
     font-weight: bolder;
+}
+
+#menu-button {
+    display: none;
 }
 
 /* -------------------------- Smaller devices ----------------------------*/
@@ -46,20 +51,17 @@ nav a:hover {
         display: none; /* Hide the navigation links by default */
         flex-direction: column;
         position: absolute;
-        background: #fff; /* Background color for the dropdown */
+        background: transparent; /* Background color for the dropdown */
         left: 0;
         right: 0;
     }
 
-    nav li {
-        display: block; /* Display list items as blocks in the dropdown */
-    }
-
     #menu-button {
+        display: block;
         background-color: transparent;
         color: #fff;
         border: none;
-        padding: 20px 20px;
+        padding: 10px 10px;
         cursor: pointer;
         position: fixed;
         top: 10px;
@@ -77,6 +79,8 @@ nav a:hover {
 
     nav a {
         width: 100%; /* Full width for dropdown links */
-        color:#5c5442;
+        color:#fff;
+        block-size: 60px;
+        font-size: 2rem;
     }
 }
