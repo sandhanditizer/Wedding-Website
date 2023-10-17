@@ -12,41 +12,71 @@ nav {
 nav ul {
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
     display: inline;
-    margin: 0 30px;
 }
 
 nav a {
     text-decoration: none;
     color: #5c5442;
-    font-weight: bold;
     font-size: 20px;
     transition: color 0.3s;
+    width: 150px;
+    display: inline-block;
 }
 
 nav a:hover {
     color: #a74d00;
+    font-weight: bolder;
 }
 
 /* -------------------------- Smaller devices ----------------------------*/
 
 @media (max-width: 500px) {
     nav {
-        padding: 5px;
+        backdrop-filter: none;
+        padding: 50%;
     }
-    
+
     nav ul {
-        text-align: center;
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        background: #fff; /* Background color for the dropdown */
+        left: 0;
+        right: 0;
     }
 
     nav li {
-        margin: 0 20px;
+        display: block; /* Display list items as blocks in the dropdown */
+    }
+
+    #menu-button {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        padding: 20px 20px;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+    
+    #menu-button i {
+        font-size: 20px;
+    }
+
+    .show-menu {
+        display: block; /* Show the dropdown when the "menu" button is clicked */
     }
 
     nav a {
-        font-size: 16px;
+        width: 100%; /* Full width for dropdown links */
+        color:#5c5442;
     }
 }

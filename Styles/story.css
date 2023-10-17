@@ -1,37 +1,44 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 #story {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
     background-color: #f2efe8; /* Change the background color to your preference */
-    padding: 20px; /* Add padding for better readability */
+    padding: 40px; /* Add padding for better readability */
 }
 
 #story h2 {
     color: #5c5442;
-    font-size: 3rem;
+    font-size: 6rem;
+    font-family: 'Wedding';
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #story p {
     font-size: 1.8rem;
-    max-width: 40%; /* Adjust the width as needed */
-    text-align: left;
-    margin-left: auto; /* Push the paragraph to the right */
-    margin-right: 200px;
+    max-width: 55%; /* Adjusts the width */
+    text-align: center; /* Center the text */
     padding: 20px;
+    box-shadow: 0 0 10px rgba(167, 77, 0, 0.7);
+    /* border: 2px solid #a74d00; */
+    background-color: #fdfcfa;
+    margin-right: 100px
+}
 
-    border: 2px solid #a74d00;
-    background-color: #f7f5ee;
+.story-content {
+    display: flex;
+    align-items: center; /* Center the content vertically within the arch frame */
+    justify-content: center; /* Center the content horizontally within the arch frame */
+}
+
+.arch-frame {
+    width: 22%; /* Set the desired width for your arch */
+    height: auto; /* Set the desired height for your arch */
+    background: transparent;
+    /* border: 3px solid #a74d00; */
+    box-shadow: 0 0 10px rgba(167, 77, 0, 0.7);
+    border-top-left-radius: 200px 200px; /* Adjust the radii to create an arch shape */
+    border-top-right-radius: 200px 200px;
+    margin: auto;
 }
 
 @media (max-width: 500px) {
@@ -40,8 +47,8 @@ ul, li {
     }
 
     #story h2 {
-        padding-top: 20px;
-        font-size: 2rem; /* Reduce font size for headers */
+        padding-top: 0px;
+        font-size: 4rem; /* Reduce font size for headers */
         margin-bottom: 0;
     }
 

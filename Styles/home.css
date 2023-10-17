@@ -1,35 +1,31 @@
 @font-face {
     font-family: 'Wedding';
-    src: url('../Fonts/Wedding.otf') format('otf'),
-    url('../Fonts/Wedding.otf') format('woff'),
-    url('../Fonts/Wedding.otf') format('woff2');
-}
-
-body {
-    margin: 0;
-    padding: 0;
+    src: url('../Fonts/RoyalWedding.otf') format('otf'),
+    url('../Fonts/RoyalWedding.ttf') format('ttf'),
+    url('../Fonts/RoyalWedding.woff') format('woff');
 }
 
 #home {
-    height: calc(100vh - 80px); /* Shrink the bottom of the image up */
-    background-image: url('../Images/homescreen.JPG');
+    height: calc(100vh - 300px); /* Shrink the bottom of the image up */
+    background-image: url('../Images/homescreen.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 70%;
+    background-position: center 25%;
     border: 40px solid #fff;
 }
 
 #home h1, #home h2 {
     opacity: 0;
     color: #f1ede6;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center; /* Center text */
+    text-align: right;
+    padding-right: 100px;
     font-family: 'Wedding';
+    font-weight: 100;
 }
 
 #home h1 {
-    transition: opacity 1.2s ease-in-out 1.2s;
+    transition: opacity 1.8s ease-in-out 1.8s;
     font-size: 10rem;
     margin-top: 120px;
     margin-bottom: 0px;
@@ -37,7 +33,7 @@ body {
 
 #home h2 {
     transition: opacity 2.5s ease-in-out 2.5s;
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-top: 10px;
 }
 
@@ -49,23 +45,25 @@ body {
 
 @media (max-width: 500px) {
     #home {
-        height: 100vh;
         border: 0px;
         border-radius: 0px;
-        background-position: 10% center;
+        background-position: 48.5% center;
     }
 
     #home h1 {
         font-size: 5rem;
-        text-shadow: none;
-        margin-top: 0px;
-        padding-top: 140px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 0px;
+        padding-top: 15px;
+        padding-inline: 20px;
+        padding-bottom: 0px;
+        text-align: left;
     }
 
     #home h2 {
         font-size: 2.5rem;
-        text-shadow: none;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin: 0px;
+        padding-left: 100px;
+        padding-top: 0px;
+        text-align: left;
     }
 }
