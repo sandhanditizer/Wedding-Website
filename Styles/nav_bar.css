@@ -1,6 +1,6 @@
 nav {
     background: transparent;
-    padding: 5px;
+    padding: 9px;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@ nav a {
     text-decoration: none;
     color: #5c5442;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
