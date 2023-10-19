@@ -33,13 +33,13 @@
 }
 
 .arch-frame {
-    width: 22%; /* Set the desired width for your arch */
+    width: 28%; /* Set the desired width for your arch */
     height: auto; /* Set the desired height for your arch */
     background: transparent;
     /* border: 3px solid #a74d00; */
     box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
-    border-top-left-radius: 200px 200px; /* Adjust the radii to create an arch shape */
-    border-top-right-radius: 200px 200px;
+    border-top-left-radius: 220px 220px; /* Adjust the radii to create an arch shape */
+    border-top-right-radius: 220px 220px;
     margin: auto;
 }
 

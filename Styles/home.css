@@ -1,33 +1,37 @@
 #home {
     height: calc(100vh - 300px); /* Shrink the bottom of the image up */
-    background-image: url('../Images/home.jpeg');
+    background-image: url('../Images/home2.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 25%;
+    background-position: center 220%;
     border: 40px solid #fff;
 }
 
 #home h1, #home h2 {
     opacity: 0;
-    color: #f1ede6;
-    text-align: right;
-    padding-right: 100px;
+    color: #455851;
     font-family: 'Wedding';
-    font-weight: 100;
+    font-weight: lighter;
 }
 
 #home h1 {
+    white-space: pre;
     transition: opacity 1.8s ease-in-out 1.8s;
-    font-size: 10rem;
-    margin-top: 120px;
-    margin-bottom: 0px;
+    font-size: 6rem;
+    margin-top: 70px;
+    margin-right: 90px;
+    text-align: right;
+    text-shadow: -2px 2px 5px rgba(251, 248, 244, 1);
 }
 
 #home h2 {
     transition: opacity 2.5s ease-in-out 2.5s;
-    font-size: 4.5rem;
-    margin-top: 10px;
+    font-size: 3rem;
+    margin-top: 190px;
+    margin-right: 90px;
+    text-align: right;
+    text-shadow: -2px 2px 5px rgba(251, 248, 244, 1);
 }
 
 #home.h1-visible h1, #home.h2-visible h2 {

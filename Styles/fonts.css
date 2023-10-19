@@ -1,6 +1,5 @@
 @font-face {
     font-family: 'Wedding';
-    src: url('../Fonts/RoyalWedding.otf') format('otf'),
-    url('../Fonts/RoyalWedding.ttf') format('ttf'),
-    url('../Fonts/RoyalWedding.woff') format('woff');
+    src: url('../Fonts/Nesans.ttf') format('ttf'),
+    url('../Fonts/Nesans.woff') format('woff');
 }
