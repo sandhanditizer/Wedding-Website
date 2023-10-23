@@ -1,41 +1,47 @@
 #home {
     height: calc(100vh - 300px); /* Shrink the bottom of the image up */
-    background-image: url('../Images/home2.JPG');
+    background-image: url('../Images/home.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 220%;
+    background-position: center 180%;
     border: 40px solid #fff;
 }
 
 #home h1, #home h2 {
     opacity: 0;
-    color: #455851;
-    font-family: 'Wedding';
-    font-weight: lighter;
+    color: #fff;
+    font-family: 'Header';
+    letter-spacing: 10px;
 }
 
 #home h1 {
     white-space: pre;
     transition: opacity 1.8s ease-in-out 1.8s;
-    font-size: 6rem;
-    margin-top: 70px;
-    margin-right: 90px;
+    font-size: 4rem;
     text-align: right;
-    text-shadow: -2px 2px 5px rgba(251, 248, 244, 1);
+    text-shadow: 0 0 20px rgba(229,231,209, 1);
+    margin-top: 50px;
+    margin-right: 70px;
 }
 
 #home h2 {
     transition: opacity 2.5s ease-in-out 2.5s;
-    font-size: 3rem;
-    margin-top: 190px;
-    margin-right: 90px;
+    font-size: 2rem;
     text-align: right;
-    text-shadow: -2px 2px 5px rgba(251, 248, 244, 1);
+    text-shadow: 0 0 20px rgba(229,231,209, 1);
+    margin-top: 200px;
+    margin-right: 70px;
 }
 
 #home.h1-visible h1, #home.h2-visible h2 {
     opacity: 1; /* Show the elements */
+}
+
+.and-font {
+    font-family: 'And';
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(229,231,209, 1);
 }
 
 /* -------------------------- Smaller devices ----------------------------*/

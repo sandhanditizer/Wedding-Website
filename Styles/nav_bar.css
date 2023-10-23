@@ -1,20 +1,16 @@
 nav {
-    background: transparent;
-    padding-top: 8px;
-    padding-bottom: 0px;
+    background: radial-gradient(#fff, transparent);
+    padding: 8px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    backdrop-filter: blur(20px);
 }
 
 nav ul {
     list-style-type: none;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
 nav li {
@@ -25,6 +21,7 @@ nav a {
     text-decoration: none;
     color: #3e220b;
     font-size: 20px;
+    font-family: 'Header';
     transition: color 0.3s;
     width: 150px;
     display: inline-block;
@@ -59,7 +56,7 @@ nav a:hover {
     #menu-button {
         display: block;
         background-color: transparent;
-        color: #fff;
+        color: #000;
         border: none;
         padding: 10px 10px;
         cursor: pointer;

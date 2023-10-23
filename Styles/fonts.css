@@ -1,5 +1,11 @@
 @font-face {
-    font-family: 'Wedding';
-    src: url('../Fonts/Nesans.ttf') format('ttf'),
-    url('../Fonts/Nesans.woff') format('woff');
+    font-family: 'Header';
+    src: url('../Fonts/CaviarDreams.ttf') format('truetype'),
+    url('../Fonts/CaviarDreams.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'And';
+    src: url('../Fonts/Your-Beloved.ttf') format('truetype'),
+    url('../Fonts/Your-Beloved.woff') format('woff');
 }

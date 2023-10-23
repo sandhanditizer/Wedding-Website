@@ -1,68 +1,77 @@
 #story {
     display: flex;
-    flex-direction: column;
     background-color: #f2efe8;
-    padding: 40px; 
-    padding-top: 20px;
-
+    padding: 40px;
 }
 
 #story h2 {
     color: #5c5442;
-    font-size: 6rem;
-    font-family: 'Wedding';
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#story p {
-    font-size: 1.8rem;
-    max-width: 55%; /* Adjusts the width */
-    text-align: center; /* Center the text */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
-    /* border: 2px solid #a74d00; */
-    background-color: #fdfcfa;
-    margin-right: 100px
+    font-size: 4rem;
+    font-family: 'Header';
+    letter-spacing: 10px;
+    margin: 0;
+    padding-top: 60px;
 }
 
 .story-content {
     display: flex;
-    align-items: center; /* Center the content vertically within the arch frame */
-    justify-content: center; /* Center the content horizontally within the arch frame */
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Allow the content to take the available space */
+    padding: 0 20px;
+}
+
+.story-content p {
+    font-size: 1.2rem;
+    font-family: 'header';
+    color: #5c5442;
+    max-width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
+    background-color: #fdfcfa;
+    margin-top: 80px;
 }
 
 .arch-frame {
-    width: 28%; /* Set the desired width for your arch */
-    height: auto; /* Set the desired height for your arch */
-    background: transparent;
-    /* border: 3px solid #a74d00; */
-    box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
-    border-top-left-radius: 220px 220px; /* Adjust the radii to create an arch shape */
+    max-width: 28%;
+    border-top-left-radius: 220px 220px;
     border-top-right-radius: 220px 220px;
-    margin: auto;
+    margin-inline: 40px;
+}
+
+.top-blurred-bar {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(#fff, #f2efe8);
+    height: 20px;
+}
+
+.bottom-blurred-bar {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(#f2efe8, #fff);
+    height: 20px;
 }
 
 @media (max-width: 500px) {
     #story {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px;
     }
 
     #story h2 {
         padding-top: 0px;
-        font-size: 3.5rem; /* Reduce font size for headers */
-        margin-bottom: 0;
+        font-size: 3.5rem;
+        margin-bottom: 0px;
         text-align: center;
     }
 
     #story p {
-        font-size: 1.4rem; /* Reduce font size for paragraphs */
-        max-width: 100%; /* Allow paragraphs to occupy full width */
-        text-align: center; /* Reset text alignment */
-        margin: 10px; /* Reset left margin */
-
+        font-size: 1.4rem; 
+        max-width: 100%; 
+        text-align: center;
+        margin: 10px;
         border: 1px solid #a74d00;
-        border-left: 2px solid #a74d00; /* Add left border */
+        border-left: 2px solid #a74d00;
     }
 
     .arch-frame {

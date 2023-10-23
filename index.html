@@ -6,6 +6,7 @@
         <meta name="description" content="Zachariah's and Claire's Wedding Website">
         <title>Zachariah & Claire 2024</title>
         
+        <!-- Style upload -->
         <link rel="stylesheet" href="./Styles/nav_bar.css">
         <link rel="stylesheet" href="./Styles/home.css">
         <link rel="stylesheet" href="./Styles/story.css">
@@ -15,14 +16,16 @@
         <link rel="stylesheet" href="./Styles/rsvp.css">
         <link rel="stylesheet" href="./Styles/fonts.css">
         
+        <!-- For icons  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
+        <!-- Script upload -->
         <script src="./Scripts/scroll.js"></script>
         <script src="./Scripts/home_text_fade.js"></script>
         <script src="./Scripts/menu_button.js"></script>
     </head>
     <body style="margin: 0; padding: 0;">
-        <!-- Menu (and button) -->
+        <!-- Menu (and button for smaller screens) -->
         <button id="menu-button">
             <i class="fas fa-bars"></i>
         </button>
@@ -39,39 +42,158 @@
 
         <!-- Home screen section -->
         <section id="home">
-            <h1>ZACHARIAH<br>+  CLAIRE</h1>
-            <h2>11 August 2024</h2>
-        </section>
+            <h1>
+                ZACHARIAH<br><span class="and-font">and  </span>CLAIRE
+            </h1>
+            <h2>
+                23 AUGUST 2024
+            </h2>
+        </section>        
 
-        <!-- Our story with indiviual stories -->
-        <section id="story" class="borderimg">
-            <h2>Our Story</h2>
+        <!-- Our story -->
+        <div class="top-blurred-bar"></div>
+        <section id="story">
+            <img src="Images/story.JPG" alt="Story Image" class="arch-frame">
             <div class="story-content">
-                <img src="Images/story2.JPG" alt="Story Image" class="arch-frame">
+                <h2>Our Story</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id pellentesque elit. 
                     Fusce imperdiet molestie tortor, non tempor velit ultricies eu. In hac habitasse platea dictumst. 
-                    Donec scelerisque leo venenatis porttitor mattis. Nunc diam diam, sodales porta mattis sed, fermentum a quam. 
-                    Aliquam ultricies neque quam, eu dignissim magna cursus ut. Nulla tempor porta pharetra. 
-                    Aenean velit ante, pulvinar quis ipsum in, lacinia tempus velit. Phasellus velit metus, egestas id libero quis, blandit tincidunt dui. 
-                    Donec ipsum elit, mollis in molestie eget, faucibus vitae turpis. Nunc facilisis pretium pulvinar. Sed malesuada mollis gravida. 
-                    Quisque consequat augue urna, sit amet bibendum libero vehicula malesuada. 
                     <br>
                     <br>
                     Aliquam tempor arcu at magna pulvinar congue. Donec congue ultricies urna, quis finibus dui lacinia vel. 
                     Suspendisse maximus, orci vitae pellentesque volutpat, metus nisl mattis nisi, sit amet ultricies urna nibh nec ligula. 
-                    Nulla facilisi. Duis enim neque, interdum sit amet lorem sit amet, commodo faucibus felis. Praesent sodales eleifend purus a molestie. 
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eget ligula mi. 
-                    In sagittis molestie risus eu sodales. Duis venenatis felis non hendrerit dignissim. 
-                    Sed ex metus, pretium lacinia augue non, congue dictum metus. Suspendisse porta semper tellus, rutrum euismod nisl volutpat in. 
-                    Aenean malesuada a massa ut volutpat. 
                 </p>
             </div>
         </section>
+        <div class="bottom-blurred-bar"></div>
 
         <!-- Information section about venue and schedule -->
         <section id="info">
             <h2>Information</h2>
+            <h3>Location</h3>
+            <div class="location-content">
+                <p>
+                    <strong>
+                        CEREMONY & RECEPTION ADDRESS
+                    </strong>
+                    <br><br>
+                    2219 Washington Ave, Racine, WI 53405
+                    <br><br><br><br>
+                    <strong>
+                        PARKING
+                    </strong>
+                    <br><br>
+                    Parking for guests is available in the church parking lot.<br>
+                    If the lot becomes full, there is free street parking.
+                    <br><br><br><br>
+                    <strong>
+                        NOTE
+                    </strong>
+                    <br><br>
+                    The ceremony and reception will be in the church and<br>
+                    the cocktail hour in the Murray mansion.
+                </p>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.514803745799!2d-87.8078933231914!3d42.713993412666525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880543107f3e2c4d%3A0xb2d777f2bb451316!2sThe%20Covenant%20at%20Murray%20Mansion!5e0!3m2!1sen!2sus!4v1697986781516!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <h3>Itinerary</h3>
+            <table>
+                <tr>
+                   <th>Time</th>
+                   <th>Event</th>
+                   <th>Description</th>
+                </tr>
+                <tr>
+                   <td>10:00 AM</td>
+                   <td>Ceremony</td>
+                   <td>Exchange of vows</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Ceremony</td>
+                    <td>Exchange of vows</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Ceremony</td>
+                    <td>Exchange of vows</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Ceremony</td>
+                    <td>Exchange of vows</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Ceremony</td>
+                    <td>Exchange of vows</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Ceremony</td>
+                    <td>Exchange of vows</td>
+                </tr>
+             </table>
+            <h3>Accommodations</h3>
+            <div class="accommodations-content">
+                <div class="quadrant top-left">
+                    <p>
+                        <strong>
+                            <a href="https://www.hotelverdant.com" class="hotel-title">
+                                -- Hotel Verdant --
+                            </a>
+                        </strong>
+                        <br><br>
+                        ~6 minute drive
+                        <br><br>
+                        500 Main Street, Racine, Wisconsin 53403
+                    </p>
+                </div>
+                <div class="quadrant top-right">
+                    <p>
+                        <strong>
+                            <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotel-title">
+                                -- The Americas Best Value Inn and Suites Racine --
+                            </a>
+                        </strong>
+                        <br><br>
+                        ~7 minute drive
+                        <br><br>
+                        5419 Durand Avenue, Racine, Wisconsin 53406
+                    </p>
+                </div>
+                <div class="quadrant bottom-left">
+                    <p>
+                        <strong>
+                            <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotel-title">
+                                -- DoubleTree by Hilton Hotel - Racine Harbourwalk --
+                            </a>
+                        </strong>
+                        <br><br>
+                        ~7 minute drive
+                        <br><br>
+                        223 Gaslight Circle, Racine, Wisconsin 53403
+                    </p>
+                </div>
+                <div class="quadrant bottom-right">
+                    <p>
+                        <strong>
+                            <a href="https://www.wyndhamhotels.com/travelodge/racine-wisconsin/travelodge-waters-edge-hotel-racine/overview" class="hotel-title">
+                                -- Travelodge by Wyndham Water’s Edge Hotel --
+                            </a>
+                        </strong>
+                        <br><br>
+                        ~8 minute drive
+                        <br><br>
+                        3700 Northwestern Ave, Racine, Wisconsin 53405
+                    </p>
+                </div>
+              </div>              
         </section>
 
         <!-- Display of our engagement photos -->
