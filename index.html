@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="./Styles/home.css">
         <link rel="stylesheet" href="./Styles/story.css">
         <link rel="stylesheet" href="./Styles/info.css">
-        <link rel="stylesheet" href="./Styles/gallary.css">
+        <link rel="stylesheet" href="./Styles/gallery.css">
         <link rel="stylesheet" href="./Styles/gifts.css">
         <link rel="stylesheet" href="./Styles/rsvp.css">
         <link rel="stylesheet" href="./Styles/fonts.css">
@@ -23,6 +23,7 @@
         <script src="./Scripts/scroll.js"></script>
         <script src="./Scripts/home_text_fade.js"></script>
         <script src="./Scripts/menu_button.js"></script>
+        <script src="./Scripts/gallery_size.js"></script>
     </head>
     <body style="margin: 0; padding: 0;">
         <!-- Menu (and button for smaller screens) -->
@@ -34,7 +35,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#story">Our Story</a></li>
                 <li><a href="#info">Information</a></li>
-                <li><a href="#gallary">Gallary</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
                 <li><a href="#gifts">Fund & Gifts</a></li>
                 <li><a href="#rsvp">RSVP</a></li>
             </ul>
@@ -54,7 +55,7 @@
         <div class="top-blurred-bar"></div>
         <section id="story">
             <img src="Images/story.JPG" alt="Story Image" class="arch-frame">
-            <div class="story-content">
+            <div class="story-container">
                 <h2>Our Story</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id pellentesque elit. 
@@ -71,8 +72,8 @@
         <!-- Information section about venue and schedule -->
         <section id="info">
             <h2>Information</h2>
-            <h3>Location</h3>
-            <div class="location-content">
+            <h3>Location | <span class="location-name">The Covenant at Murray Mansion</span></h3>
+            <div class="location-container">
                 <p>
                     <strong>
                         CEREMONY & RECEPTION ADDRESS
@@ -84,15 +85,13 @@
                         PARKING
                     </strong>
                     <br><br>
-                    Parking for guests is available in the church parking lot.<br>
-                    If the lot becomes full, there is free street parking.
+                    Parking for guests is available in the church parking lot. If the lot becomes full, there is free street parking.
                     <br><br><br><br>
                     <strong>
                         NOTE
                     </strong>
                     <br><br>
-                    The ceremony and reception will be in the church and<br>
-                    the cocktail hour in the Murray mansion.
+                    The ceremony and reception will be in the church and the cocktail hour in the Murray Mansion.
                 </p>
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.514803745799!2d-87.8078933231914!3d42.713993412666525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880543107f3e2c4d%3A0xb2d777f2bb451316!2sThe%20Covenant%20at%20Murray%20Mansion!5e0!3m2!1sen!2sus!4v1697986781516!5m2!1sen!2sus" 
@@ -104,102 +103,150 @@
             <h3>Itinerary</h3>
             <table>
                 <tr>
-                   <th>Time</th>
-                   <th>Event</th>
-                   <th>Description</th>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Description</th>
                 </tr>
                 <tr>
-                   <td>10:00 AM</td>
-                   <td>Ceremony</td>
-                   <td>Exchange of vows</td>
+                    <td>* 4:15 PM</td>
+                    <td>Guest Arrival</td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td>10:00 AM</td>
-                    <td>Ceremony</td>
-                    <td>Exchange of vows</td>
+                <td>&nbsp;&nbsp;4:30 PM</td>
+                <td>Ceremony</td>
+                <td>Officiated by</td>
                 </tr>
                 <tr>
-                    <td>10:00 AM</td>
-                    <td>Ceremony</td>
-                    <td>Exchange of vows</td>
+                    <td>* 5:00 PM</td>
+                    <td>Cocktail Hour</td>
+                    <td>Everyone is invited for complementary drinks and Hors D'oeuvres inside Murray Mansion.</td>
                 </tr>
                 <tr>
-                    <td>10:00 AM</td>
-                    <td>Ceremony</td>
-                    <td>Exchange of vows</td>
+                    <td>* 6:00 PM</td>
+                    <td>Introductions</td>
+                    <td>Wedding party introductions by MC.</td>
                 </tr>
                 <tr>
-                    <td>10:00 AM</td>
-                    <td>Ceremony</td>
-                    <td>Exchange of vows</td>
+                    <td>&nbsp;&nbsp;6:30 PM</td>
+                    <td>Dinner</td>
+                    <td>Guests will get to choose between two course options.</td>
                 </tr>
                 <tr>
-                    <td>10:00 AM</td>
-                    <td>Ceremony</td>
-                    <td>Exchange of vows</td>
+                    <td>* 7:15 PM</td>
+                    <td>Cake Cutting Ceremony</td>
+                    <td>The Bride and Groom will complete their first responsibility as a married couple.</td>
                 </tr>
-             </table>
+                <tr>
+                    <td>* 7:30 PM</td>
+                    <td>First Dances</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>* 8:00 PM</td>
+                    <td>Open Dance Floor</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 PM</td>
+                    <td>Bar Closes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:15 PM</td>
+                    <td>Final Song</td>
+                    <td></td>
+                </tr>
+            </table>
+            <p class="table-note">
+                * +/- 15 minutes
+            </p>
             <h3>Accommodations</h3>
-            <div class="accommodations-content">
+            <div class="accommodations-container">
                 <div class="quadrant top-left">
-                    <p>
+                    <a href="https://www.hotelverdant.com" class="hotels">
                         <strong>
-                            <a href="https://www.hotelverdant.com" class="hotel-title">
-                                -- Hotel Verdant --
-                            </a>
+                            -- Hotel Verdant --
                         </strong>
                         <br><br>
                         ~6 minute drive
                         <br><br>
                         500 Main Street, Racine, Wisconsin 53403
-                    </p>
+                    </a>
                 </div>
                 <div class="quadrant top-right">
-                    <p>
+                    <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotels">
                         <strong>
-                            <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotel-title">
-                                -- The Americas Best Value Inn and Suites Racine --
-                            </a>
+                            -- The Americas Best Value Inn and Suites Racine --
                         </strong>
                         <br><br>
                         ~7 minute drive
                         <br><br>
                         5419 Durand Avenue, Racine, Wisconsin 53406
-                    </p>
+                    </a>
                 </div>
                 <div class="quadrant bottom-left">
-                    <p>
+                    <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotels">
                         <strong>
-                            <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotel-title">
-                                -- DoubleTree by Hilton Hotel - Racine Harbourwalk --
-                            </a>
+                            -- DoubleTree by Hilton Hotel - Racine Harbourwalk --
                         </strong>
                         <br><br>
                         ~7 minute drive
                         <br><br>
                         223 Gaslight Circle, Racine, Wisconsin 53403
-                    </p>
+                    </a>
                 </div>
                 <div class="quadrant bottom-right">
-                    <p>
-                        <strong>
-                            <a href="https://www.wyndhamhotels.com/travelodge/racine-wisconsin/travelodge-waters-edge-hotel-racine/overview" class="hotel-title">
-                                -- Travelodge by Wyndham Water’s Edge Hotel --
-                            </a>
+                    <a href="https://www.wyndhamhotels.com/travelodge/racine-wisconsin/travelodge-waters-edge-hotel-racine/overview" class="hotels">
+                            <strong>
+                            -- Travelodge by Wyndham Water’s Edge Hotel --
                         </strong>
                         <br><br>
                         ~8 minute drive
                         <br><br>
                         3700 Northwestern Ave, Racine, Wisconsin 53405
-                    </p>
+                    </a>
                 </div>
-              </div>              
+            </div>       
         </section>
 
         <!-- Display of our engagement photos -->
-        <section id="gallary">
-            <h2>Gallary</h2>
+        <div class="top-blurred-bar"></div>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="button-container">
+                <button class="gallery-button" onclick="showOneColumn()">1</button>
+                <button class="gallery-button" onclick="showTwoColumns()">2</button>
+                <button class="gallery-button" onclick="showThreeColumns()">3</button>         
+            </div>   
+            <p class="button-note">
+                Select the number of columns to be displayed
+            </p>
+            <div class="gallery-row"> 
+                <div class="gallery-column">
+                    <img src="Images/Gallery/g11.JPG">
+                    <img src="Images/Gallery/g2.JPG">
+                    <img src="Images/Gallery/g3.JPG">
+                    <img src="Images/Gallery/g13.JPG">
+                    <img src="Images/Gallery/g9.JPG">
+                </div>
+                <div class="gallery-column">
+                    <img src="Images/Gallery/g4.JPG">
+                    <img src="Images/Gallery/g7.JPG">
+                    <img src="Images/Gallery/g8.JPG">
+                    <img src="Images/Gallery/g1.JPG">
+                    <img src="Images/Gallery/g6.JPG">
+                </div> 
+                <div class="gallery-column">
+                    <img src="Images/Gallery/g10.JPG">
+                    <img src="Images/Gallery/g12.JPG">
+                    <img src="Images/Gallery/g5.JPG">
+                    <img src="Images/Gallery/g14.JPG">
+                    <img src="Images/Gallery/g15.JPG">
+                </div>
+            </div>
         </section>
+        <div class="bottom-blurred-bar"></div>
 
         <!-- Links to our fund and amazon gift selection -->
         <section id="gifts">

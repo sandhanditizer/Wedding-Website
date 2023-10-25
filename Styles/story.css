@@ -11,32 +11,34 @@
     letter-spacing: 10px;
     margin: 0;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.story-content {
+.story-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1; /* Allow the content to take the available space */
-    padding: 0 20px;
+    padding: 0;
 }
 
-.story-content p {
+.story-container p {
     font-size: 1.2rem;
     font-family: 'header';
     color: #5c5442;
     max-width: 90%;
+    margin: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
     background-color: #fdfcfa;
-    margin-top: 80px;
 }
 
 .arch-frame {
     max-width: 28%;
     border-top-left-radius: 220px 220px;
     border-top-right-radius: 220px 220px;
-    margin-inline: 40px;
+    margin: auto auto;
+    padding: 20px;
 }
 
 .top-blurred-bar {
