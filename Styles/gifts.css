@@ -1,20 +1,19 @@
-/* Reset default margin and padding on body */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Reset default margin and padding on the ul and li elements */
-ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Style the Our Story section to cover the entire viewport height and allow scrolling if necessary */
 #gifts {
-    height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
-    background-color: #fff; /* Change the background color to your preference */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 60px; 
+}
+
+#gifts h2 {
     color: #5c5442;
-    padding: 20px; /* Add padding for better readability */
+    font-size: 4rem;
+    font-family: 'Header';
+    letter-spacing: 10px;
+    text-align: left;
+    margin: 0;
+}
+
+.icons {
+    width: 20%;
 }

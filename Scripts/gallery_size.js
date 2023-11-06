@@ -16,8 +16,8 @@ function showTwoColumns() {
 }
 
 // Three images side by side
-function showThreeColumns() {
+function showFourColumns() {
     for (var i = 0; i < elements.length; i++) {
-        elements[i].style.flex = "25%"; 
+        elements[i].style.flex = "10%"; 
     }
 }
