@@ -3,18 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Zachariah's and Claire's Wedding Website">
+        <meta name="description" content="Zachariah's & Claire's Wedding Website">
         <title>Zachariah & Claire 2024</title>
         
         <!-- Style upload -->
+        <link rel="stylesheet" href="./Styles/other.css">
         <link rel="stylesheet" href="./Styles/nav_bar.css">
         <link rel="stylesheet" href="./Styles/home.css">
         <link rel="stylesheet" href="./Styles/story.css">
         <link rel="stylesheet" href="./Styles/info.css">
         <link rel="stylesheet" href="./Styles/gallery.css">
-        <link rel="stylesheet" href="./Styles/gifts.css">
+        <link rel="stylesheet" href="./Styles/registry.css">
         <link rel="stylesheet" href="./Styles/rsvp.css">
-        <link rel="stylesheet" href="./Styles/fonts.css">
         
         <!-- For icons  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
@@ -36,7 +36,7 @@
                 <li><a href="#story">Our Story</a></li>
                 <li><a href="#info">Information</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#gifts">Fund & Gifts</a></li>
+                <li><a href="#registry">Registry</a></li>
                 <li><a href="#rsvp">RSVP</a></li>
             </ul>
         </nav>
@@ -44,26 +44,30 @@
         <!-- Home screen section -->
         <section id="home">
             <h1>
-                ZACHARIAH<br><span class="and-font">and  </span>CLAIRE
+                ZACHARIAH
+                <br>
+                <span class="and-font">and&nbsp;&nbsp;</span>CLAIRE
+                <br>
+                <br>
+                <span class="date">-23 AUGUST 2024-</span>
             </h1>
-            <h2>
-                23 AUGUST 2024
-            </h2>
         </section>        
 
         <!-- Our story -->
         <div class="top-blurred-bar"></div>
         <section id="story">
-            <img src="Images/story.JPG" alt="Story Image" class="arch-frame">
+            <img src="Images/story.jpg" alt="Colored Story Image">
             <div class="story-container">
                 <h2>Our Story</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id pellentesque elit. 
-                    Fusce imperdiet molestie tortor, non tempor velit ultricies eu. In hac habitasse platea dictumst. 
-                    <br>
-                    <br>
-                    Aliquam tempor arcu at magna pulvinar congue. Donec congue ultricies urna, quis finibus dui lacinia vel. 
-                    Suspendisse maximus, orci vitae pellentesque volutpat, metus nisl mattis nisi, sit amet ultricies urna nibh nec ligula. 
+                    Hello, and welcome to our love story! We're Zachariah and Claire, and our journey together began in the winter of 2021 at Wisconsin Lutheran College. 
+                    Our story officially started when Jacob, Claire's brother and Zachariah's roommate, played the role of Cupid and introduced us. 
+                    Little did we know that this chance meeting would change our lives forever. 
+                    As we spent more time together, we discovered shared passions, laughed over inside jokes, and navigated the beautiful journey of getting to know one another. 
+                    Our connection was immediate and deep, and this initial spark grew into something truly special. 
+                    Our journey reached another new pinnacle when we got engaged on the early morning of September 23rd, 2023, at Lion’s Den Gorge in Grafton, Wisconsin. 
+                    It was a moment filled with love, joy, and the promise of a future together. 
+                    From fun adventures like camping, skiing, and scuba diving to embracing the simple joys of everyday moments, we try to get the most out of the life God has given us together.
                 </p>
             </div>
         </section>
@@ -72,26 +76,38 @@
         <!-- Information section about venue and schedule -->
         <section id="info">
             <h2>Information</h2>
-            <h3>Location | <span class="location-name">The Covenant at Murray Mansion</span></h3>
+            <div class="large-screen">
+                <h3>
+                    Location | <span class="location-name">The Covenant at Murray Mansion</span>
+                </h3>
+            </div>
+            <div class="small-screen">
+                <h3>
+                    -Location-
+                </h3>
+                <h3 class="location-name">
+                    The Covenant at Murray Mansion
+                </h3>
+            </div>
             <div class="location-container">
                 <p>
+                    <strong>
+                        NOTE
+                    </strong>
+                    <br><br>
+                    The ceremony and reception will be held at the same venue.
+                    <br><br><br>
                     <strong>
                         CEREMONY & RECEPTION ADDRESS
                     </strong>
                     <br><br>
                     2219 Washington Ave, Racine, WI 53405
-                    <br><br><br><br>
+                    <br><br><br>
                     <strong>
                         PARKING
                     </strong>
                     <br><br>
-                    Parking for guests is available in the church parking lot. If the lot becomes full, there is free street parking.
-                    <br><br><br><br>
-                    <strong>
-                        NOTE
-                    </strong>
-                    <br><br>
-                    The ceremony and reception will be in the church and the cocktail hour in the Murray Mansion.
+                    The parking lot enterance is on located off of Taylor Ave. In the event that the venue parking lot becomes full, there is free street parking available (Kearney Ave and Taylor Ave).
                 </p>
                 <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.514803745799!2d-87.8078933231914!3d42.713993412666525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880543107f3e2c4d%3A0xb2d777f2bb451316!2sThe%20Covenant%20at%20Murray%20Mansion!5e0!3m2!1sen!2sus!4v1697986781516!5m2!1sen!2sus" 
@@ -100,7 +116,7 @@
                 referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
-            <h3>Itinerary</h3>
+            <h3>Evening Schedule</h3>
             <table>
                 <tr>
                 <th>Time</th>
@@ -108,62 +124,59 @@
                 <th>Description</th>
                 </tr>
                 <tr>
-                    <td>* 4:15 PM</td>
+                    <td>4:15</td>
                     <td>Guest Arrival</td>
-                    <td></td>
+                    <td>Enter through the main doors on the south side of the venue where the parking lot is.</td>
                 </tr>
                 <tr>
-                <td>&nbsp;&nbsp;4:30 PM</td>
+                <td>4:30</td>
                 <td>Ceremony</td>
                 <td>Officiated by</td>
                 </tr>
                 <tr>
-                    <td>* 5:00 PM</td>
+                    <td>5:00</td>
                     <td>Cocktail Hour</td>
-                    <td>Everyone is invited for complementary drinks and Hors D'oeuvres inside Murray Mansion.</td>
+                    <td>Complementary drinks, Hors D'oeuvres, and music will be inside Murray Mansion.</td>
                 </tr>
                 <tr>
-                    <td>* 6:00 PM</td>
+                    <td>6:00</td>
                     <td>Introductions</td>
-                    <td>Wedding party introductions by MC.</td>
+                    <td>General announcments.</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;&nbsp;6:30 PM</td>
+                    <td>6:30</td>
                     <td>Dinner</td>
-                    <td>Guests will get to choose between two course options.</td>
+                    <td>Be prepared to give your best joke!</td>
                 </tr>
                 <tr>
-                    <td>* 7:15 PM</td>
+                    <td>7:15</td>
                     <td>Cake Cutting Ceremony</td>
-                    <td>The Bride and Groom will complete their first responsibility as a married couple.</td>
+                    <td>Gluten free options will be available.</td>
                 </tr>
                 <tr>
-                    <td>* 7:30 PM</td>
+                    <td>7:30</td>
                     <td>First Dances</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>* 8:00 PM</td>
+                    <td>8:00</td>
                     <td>Open Dance Floor</td>
-                    <td></td>
+                    <td>The DJ will accept music requests.</td>
                 </tr>
                 <tr>
-                    <td>11:00 PM</td>
+                    <td>11:00</td>
                     <td>Bar Closes</td>
-                    <td></td>
+                    <td>Drink up!</td>
                 </tr>
                 <tr>
-                    <td>11:15 PM</td>
+                    <td>11:15</td>
                     <td>Final Song</td>
                     <td></td>
                 </tr>
             </table>
-            <p class="table-note">
-                * +/- 15 minutes
-            </p>
-            <h3>Accommodations</h3>
-            <div class="accommodations-container">
-                <div class="quadrant top-left">
+            <h3>Lodging</h3>
+            <div class="lodging-container">
+                <div class="quadrant">
                     <a href="https://www.hotelverdant.com" class="hotels">
                         <strong>
                             -- Hotel Verdant --
@@ -171,50 +184,116 @@
                         <br><br>
                         ~6 minute drive
                         <br><br>
-                        500 Main Street, Racine, Wisconsin 53403
+                        500 Main Street, 
+                        <br>
+                        Racine, Wisconsin 53403
                     </a>
                 </div>
-                <div class="quadrant top-right">
+                <div class="quadrant">
                     <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotels">
                         <strong>
-                            -- The Americas Best Value Inn and Suites Racine --
+                            -- Racine Harbourwalk --
                         </strong>
                         <br><br>
                         ~7 minute drive
                         <br><br>
-                        5419 Durand Avenue, Racine, Wisconsin 53406
+                        223 Gaslight Circle, 
+                        <br>
+                        Racine, Wisconsin 53403
                     </a>
                 </div>
-                <div class="quadrant bottom-left">
+                <div class="quadrant">
                     <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotels">
                         <strong>
-                            -- DoubleTree by Hilton Hotel - Racine Harbourwalk --
+                            -- The Americas Best Inn & Suite --
                         </strong>
                         <br><br>
                         ~7 minute drive
                         <br><br>
-                        223 Gaslight Circle, Racine, Wisconsin 53403
+                        5419 Durand Avenue, 
+                        <br>
+                        Racine, Wisconsin 53406
                     </a>
                 </div>
-                <div class="quadrant bottom-right">
+                <div class="quadrant">
                     <a href="https://www.wyndhamhotels.com/travelodge/racine-wisconsin/travelodge-waters-edge-hotel-racine/overview" class="hotels">
                             <strong>
-                            -- Travelodge by Wyndham Water’s Edge Hotel --
+                            -- Water’s Edge Hotel --
                         </strong>
                         <br><br>
                         ~8 minute drive
                         <br><br>
-                        3700 Northwestern Ave, Racine, Wisconsin 53405
+                        3700 Northwestern Ave, 
+                        <br>
+                        Racine, Wisconsin 53405
                     </a>
                 </div>
-            </div>       
+            </div>   
+            <p class="note">Click a hotel to explore</p>    
+            <!-- <h3>Wedding Party</h3>
+            <div class="party-container">
+                <div class="quadrant left1">
+                    <img src="" alt="Jacob Treitsch" class="party-img">
+                    <figcaption>
+                        <strong>Jacob Treitsch</strong> - Brother of the Bride
+                    </figcaption>
+                </div>
+                <div class="quadrant left2">
+                    <img src="" alt="Olivia Staples" class="party-img">
+                    <figcaption>
+                        <strong>Olivia Staples</strong> - Cousin of the Bride
+                    </figcaption>
+                </div>
+                <div class="quadrant left3">
+                    <img src="" alt="Katie Hendricksen" class="party-img">
+                    <figcaption>
+                        <strong>Katie Hendricksen</strong> - Cousin of the Bride
+                    </figcaption>
+                </div>
+                <div class="quadrant left4">
+                    <img src="" alt="Savannah Bland" class="party-img">
+                    <figcaption>
+                        <strong>Savannah Bland</strong> - Best friend of the Bride
+                    </figcaption>
+                </div>
+                <div class="quadrant left5">
+                    <img src="" alt="Madi Odell" class="party-img">
+                    <figcaption>
+                        <strong>Madi Odell</strong> - Best friend of the Bride
+                    </figcaption>
+                </div>
+                <div class="quadrant right1">
+                    <img src="Images/Wedding Party/levi.jpeg" alt="Levi Kline" class="party-img">
+                    <figcaption>
+                        <strong>Levi Kline</strong> - Brother of the Groom
+                    </figcaption>
+                </div>
+                <div class="quadrant right2">
+                    <img src="Images/Wedding Party/ben.jpeg" alt="Ben Bateman" class="party-img">
+                    <figcaption>
+                        <strong>Ben Bateman</strong> - Best Friend of the Groom
+                    </figcaption>
+                </div>
+                <div class="quadrant right3">
+                    <img src="Images/Wedding Party/connor.heic" alt="Connor Boinski" class="party-img">
+                    <figcaption>
+                        <strong>Connor Boinski</strong> - Best Friend of the Groom
+                    </figcaption>
+                </div>
+                <div class="quadrant right4">
+                    
+                </div>
+                <div class="quadrant right4">
+
+                </div>
+            </div> -->
         </section>
 
         <!-- Display of our engagement photos -->
         <div class="top-blurred-bar"></div>
         <section id="gallery">
             <h2>Gallery</h2>
-            <div class="button-container">
+            <div class="gallery-button-container">
                 <button class="gallery-button" onclick="showFourColumns()">4</button>         
                 <button class="gallery-button" onclick="showTwoColumns()">2</button>
                 <button class="gallery-button" onclick="showOneColumn()">1</button>
@@ -222,62 +301,73 @@
             <p class="button-note">
                 Select the number of columns to be displayed
             </p>
-            <div class="gallery-row"> 
+            <div class="gallery"> 
                 <div class="gallery-column">
                     <img src="Images/Gallery/P1.JPG">
                     <img src="Images/Gallery/P14.JPG">
-                    <img src="Images/Gallery/P10.JPG">
-                    <img src="Images/Gallery/P2.JPG">
-                    <img src="Images/Gallery/P5.JPG">
+                    <img src="Images/Gallery/P11.JPG" style="filter: brightness(120%)">
+                    <img src="Images/Gallery/P6.JPG">
+                    <img src="Images/Gallery/P8.JPG">
                 </div>
                 <div class="gallery-column">
-                    <img src="Images/Gallery/P6.JPG">
+                    <img src="Images/Gallery/P2.JPG">
                     <img src="Images/Gallery/P7.JPG">
-                    <img src="Images/Gallery/P12.JPG">
+                    <img src="Images/Gallery/P12.JPG" style="filter: brightness(120%)">
                     <img src="Images/Gallery/P17.JPG">
                 </div>
                 <div class="gallery-column">
-                    <img src="Images/Gallery/P11.JPG">
+                    <img src="Images/Gallery/P16.JPG">
                     <img src="Images/Gallery/P18.JPG">
                     <img src="Images/Gallery/P13.JPG">
                     <img src="Images/Gallery/P4.JPG">
                 </div> 
                 <div class="gallery-column">
-                    <img src="Images/Gallery/P15.JPG">
-                    <img src="Images/Gallery/P16.JPG">
+                    <img src="Images/Gallery/P15.JPG" style="filter: brightness(120%)">
+                    <img src="Images/Gallery/P10.JPG">
                     <img src="Images/Gallery/P3.JPG">
-                    <img src="Images/Gallery/P9.JPG">
-                    <img src="Images/Gallery/P8.JPG">
+                    <img src="Images/Gallery/P9.JPG" style="filter: brightness(120%)">
+                    <img src="Images/Gallery/P5.JPG">
                 </div>
             </div>
-            <div class="button-container">
+            <div class="gallery-button-container">
                 <button class="gallery-button" onclick="showFourColumns()">4</button>         
                 <button class="gallery-button" onclick="showTwoColumns()">2</button>
                 <button class="gallery-button" onclick="showOneColumn()">1</button>
-            </div>   
+            </div>    
         </section>
         <div class="bottom-blurred-bar"></div>
 
         <!-- Links to our fund and amazon gift selection -->
-        <section id="gifts">
-            <h2>Fund & Gifts</h2>
-            <img src="Images/Icons/money-bag.png" class="icons">
-            <img src="Images/Icons/presents.png" class="icons">
-            <p>
-                If you would like to help 
-            </p>
+        <section id="registry">
+            <h2>Registry</h2>
+            <div class="registry-container">
+                <p>
+                    Being able to celebrate with you is an incredible blessing of its own. 
+                    If you are feeling generious, we do have a gift registry and general wedding fund that will be going towards necessities for our new life together.
+                </p>
+                <div class="registry-button-container">
+                    <button class="registry-button">Wedding Fund</button>
+                    <button class="registry-button">Gift Catalog</button>         
+                </div>  
+            </div>
         </section>
 
         <!-- Allows an invitee to rsvp -->
+        <div class="top-blurred-bar"></div>
         <section id="rsvp">
             <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <p>
+                    If you plan on celebrating with us, RSVP with the link below!
+                </p>
+                <div class="rsvp-button-container">
+                    <button class="rsvp-button">RSVP</button>    
+                </div>  
+            </div>
         </section>
 
-        <!-- Footer Section -->
         <footer>
-            <p>
-                &copy; Zachariah's & Clarie's Wedding. All rights reserved. Created by Zachariah.
-            </p>
+            &copy; Created by Zachariah and approved by Claire.
         </footer>
     </body>
 </html>

@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f2efe8;
+    background-color: #fefaee;
     padding: 40px;
+    padding-bottom: 0;
 }
 
 #gallery h2 {
@@ -11,71 +12,91 @@
     font-size: 4rem;
     font-family: 'Header';
     letter-spacing: 10px;
-    text-align: center;
-    padding: 30px;
     margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.gallery-row {
+#gallery .gallery {
     display: flex;
     flex-wrap: wrap;
 }
 
-.gallery-column {
+#gallery .gallery-column {
     flex: 10%;
     padding: 5px;
 }
 
-.gallery-column img {
+#gallery .gallery-column img {
     vertical-align: middle;
     width: 100%;
     padding: 5px;
 }
 
-.button-container {
+#gallery .button-note {
+    font-family: 'Header';
+    color: #5c5442;
+    text-align: center;
+    margin: 0;
+}
+
+#gallery .gallery-button-container {
     display: flex;
-    justify-content: center; /* Horizontally center the buttons */
+    justify-content: center;
     margin: 20px;
     margin-bottom: 5px;
 }
 
-.gallery-button {
-    background-color: #5c5442;
+#gallery .gallery-button {
+    background-color: rgba(168, 60, 6, 0.6);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
     transition: background-color 0.3s;
 }
 
-.gallery-button:hover {
-    background-color: #a74d00;
+#gallery .gallery-button:hover {
+    background-color: #a83c06;
 }
 
-.button-note {
-    font-family: 'Header';
-    color: #5c5442;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-}
+/* -------------------------- Smaller devices -------------------------- */
 
-.top-blurred-bar {
-    position: absolute;
-    width: 100%;
-    background: linear-gradient(#fff, #f2efe8);
-    height: 20px;
-}
+@media (max-width: 1300px) {
+    #gallery {
+        padding: 10px;
+        padding-top: 35px;
+    }
 
-.bottom-blurred-bar {
-    position: absolute;
-    width: 100%;
-    background: linear-gradient(#f2efe8, #fff);
-    height: 20px;
-}
+    #gallery h2 {
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
 
-@media (max-width: 500px) {
+    #gallery .gallery {
+        display: unset;
+        flex-wrap: nowrap;
+    }
+
+    #gallery .gallery-column {
+        flex: 40%;
+        padding: 0;
+    }
+
+    #gallery .gallery-column img {
+        padding: 0;
+        padding-block: 3px;
+        width: 100%;
+    }    
+
+    #gallery .button-note {
+        display: none;
+    }
+
+    #gallery .gallery-button-container {
+        display: none;
+    }
 }

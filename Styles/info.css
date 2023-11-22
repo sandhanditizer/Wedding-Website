@@ -1,8 +1,9 @@
-#info {
+ #info {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 60px; 
+    padding: 40px; 
+    padding-bottom: 0;
 }
 
 #info h2 {
@@ -10,8 +11,9 @@
     font-size: 4rem;
     font-family: 'Header';
     letter-spacing: 10px;
-    text-align: right;
     margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
 #info h3 {
@@ -19,131 +21,211 @@
     font-size: 2.5rem;
     font-family: 'Header';
     letter-spacing: 10px;
+    margin: 0;
+    padding: 0;
     text-align: left;
-    margin: 40px;
-    margin-left: 20px;
 }
 
-.location-name {
-    font-family: 'Header';
+#info .location-name {
     font-size: 1.2rem;
     letter-spacing: normal;
 }
 
-.location-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    margin-bottom: 40px;
-    margin-inline: 60px;
+#info .large-screen {
+    display: block;
 }
-  
-.location-container p {
-    flex: 1; /* Allow the iframe to grow as the window size decreases */
+
+#info .small-screen {
+    display: none;
+}
+
+/* -------------------------- Location Info -------------------------- */
+
+#info .location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#info .location-container p {
+    flex: 1;
     font-family: 'header';
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #5c5442;
     text-align: center;
-    box-shadow: 0 0 10px rgba(167, 77, 0, 0.8);
-    padding: 40px;
+    line-height: 25pt;
+    box-shadow: 0 0 10px rgba(168, 60, 6, 0.8);
+    background-color: #fff;
+    padding: 20px;
     margin: 20px;
 }
-  
-.location-container iframe {
+
+#info .location-container iframe {
     flex: 2; 
-    height: auto;
-    width: 100%;
     border: 0;
     margin: 20px;
 }  
 
-table {
-    width: 85%; /* Make the table width 100% of its container */
+/* -------------------------- Itinerary -------------------------- */
+
+#info table {
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 20px;
+    margin-bottom: 60px;
 }
 
-th, td {
-    white-space: normal; /* Allow text to wrap */
-    word-wrap: break-word; /* Break long words if necessary */
+#info th, #info td {
+    white-space: normal;
+    word-wrap: break-word;
     border: 1px solid #ddd;
     color: #5c5442;
     font-family: 'Header';
-    font-size: 1.2rem;
-    padding: 5px;
+    font-size: 1.3rem;
+    padding: 7px;
 }
 
-th {
-    background-color: rgba(167, 77, 0, 0.3);
-}
-
-tr:hover {
-    background-color: rgba(167, 77, 0, 0.1);
-}
-
-.table-note {
-    font-family: 'Header';
-    color: #5c5442;
+#info th {
     text-align: center;
+    background-color: rgba(168, 60, 6, 0.4);
 }
 
-.accommodations-container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px; /* Adjust the gap as needed */
+#info td {
+    text-align: left;
 }
-  
-.quadrant {
-    margin: 40px;
-    margin-inline: 135px;
+
+#info tr:hover {
+    background-color: rgba(168, 60, 6, 0.1);
+}
+
+/* -------------------------- Lodging -------------------------- */
+
+#info .lodging-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+#info .quadrant {
+    margin: 20px;
+    margin-inline: auto;
     text-align: center;
     font-family: 'header';
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #5c5442;
 }
 
-.top-left {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.top-right {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.bottom-left {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.bottom-right {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.hotels {
+#info .hotels {
     text-decoration: none;
     color: #5c5442;
 }
 
-.hotels:hover {
-    color: #a74d00;
+#info .hotels:hover {
+    color: #a83c06;
     font-weight: bolder;
 }
- 
 
-@media (max-width: 500px) {
+#info .note {
+    font-family: 'Header';
+    color: #5c5442;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* -------------------------- Wedding party -------------------------- */
+
+
+
+/* -------------------------- Smaller devices -------------------------- */
+
+@media (max-width: 1300px) {
     #info {
         padding: 10px;
+        padding-top: 40px;
+    }
+    
+    #info h2 {
+        text-align: center;
+        font-size: 2.5rem;
     }
 
-    #info h2 {
-        padding-top: 0px;
-        font-size: 3.5rem;
-        margin-bottom: 0px;
+    #info h3 {
+        display: block;
         text-align: center;
+        font-size: 1.6rem;
+        padding-top: 30px;
     }
+
+    #info .location-name {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        padding-block: 10px;
+    }
+
+    #info .large-screen {
+        display: none;
+    }
+    
+    #info .small-screen {
+        display: block;
+    }
+
+    /* -------------------------- Location Info -------------------------- */
+
+    #info .location-container {
+        display: block;
+        margin: 0;
+        flex-wrap: unset;
+    }
+
+    #info .location-container p {
+        font-size: 1rem;
+        line-height: 18pt;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #info .location-container iframe {
+        height: 300px;
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }  
+
+    /* -------------------------- Itinerary -------------------------- */
+
+    #info table {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #info th, #info td {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    /* -------------------------- Lodging -------------------------- */
+
+    #info .lodging-container {
+        margin: 0;
+    }
+
+    #info .quadrant {
+        width: 350px;
+        font-size: 1rem;
+        padding: 0;
+        margin: 10px;
+    }
+
+    #info .note {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    /* -------------------------- Wedding party -------------------------- */
+
+    
 }
