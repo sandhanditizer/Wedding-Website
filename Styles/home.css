@@ -7,7 +7,7 @@
     background-attachment: fixed;
     background-position: center 120%;
     border: 40px solid #fff;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
@@ -19,8 +19,9 @@
     font-family: 'Header';
     font-size: 4rem;
     font-weight: 400;
-    text-align: center;
     margin: 0;
+    text-align: center;
+    padding-right: 80px;
 }
 
 #home .and-font {
@@ -44,6 +45,7 @@
         height: 100vh;
         background-image: url('../Images/home2.JPG');
         background-position: center center;
+        justify-content: center;
         transform: scale(1);
         border: 0;
     }
@@ -51,6 +53,7 @@
     #home h1 {
         font-size: 3rem;
         font-weight: 550;
+        padding: 0;
         padding-bottom: 80px;
     }
 
