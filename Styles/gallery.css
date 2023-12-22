@@ -48,6 +48,7 @@
 }
 
 #gallery .gallery-button {
+    font-family: 'Header';
     background-color: rgba(168, 60, 6, 0.6);
     color: #ffffff;
     border: none;

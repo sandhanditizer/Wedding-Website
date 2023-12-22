@@ -17,11 +17,12 @@
     color: #fff;
     letter-spacing: 10px;
     font-family: 'Header';
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 400;
     margin: 0;
     text-align: center;
-    padding-right: 80px;
+    padding-right: 50px;
+    text-shadow: 0px 0px 30px rgba(60, 69, 75, 1);
 }
 
 #home .and-font {
@@ -30,8 +31,16 @@
 }
 
 #home .date {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
+}
+
+#home #countdown {
+    font-family: 'Header';
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-block: 12px;
 }
 
 #home.h1-visible h1 {
@@ -58,6 +67,10 @@
     }
 
     #home .and-font {
+        font-size: 1.3rem;
+    }
+
+    #home #countdown {
         font-size: 1.3rem;
     }
 

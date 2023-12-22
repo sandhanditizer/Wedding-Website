@@ -2,80 +2,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fefbf0;
-    padding: 40px;
-    padding-bottom: 20px;
+    padding-inline: 100px;
+    padding-top: 20px;
 }
 
-#rsvp h2 {
-    color: #5c5442;
-    font-size: 4rem;
-    font-family: 'Header';
-    letter-spacing: 10px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+#rsvp .form {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    width: 100%;
 }
 
-#rsvp .rsvp-container {
-    margin: auto;
-}
-
-#rsvp .rsvp-container p {
-    font-size: 1.3rem;
-    line-height: 25pt;
-    font-family: 'header';
-    color: #5c5442;
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    margin-block: 40px;
-    box-shadow: 0 0 10px rgba(168, 60, 6, 0.8);
-    background-color: #fff;
-}
-
-#rsvp .rsvp-button-container {
-    display: flex;
-    justify-content: center;
-}
-
-#rsvp .rsvp-button {
-    background-color: rgba(168, 60, 6, 0.6);
-    color: #fff;
+#rsvp iframe {
+    position: relative;
+    z-index: 100;
+    min-width: 100%;
+    max-width: 100%;
+    height: 520px;
     border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-#rsvp .rsvp-button:hover {
-    background-color: #a83c06;
 }
 
 /* -------------------------- Smaller devices -------------------------- */
 
 @media (max-width: 1300px) {
     #rsvp {
-        padding: 10px;
-        padding-block: 35px;
-    }
-
-    #rsvp h2 {
-        font-size: 3rem;
-    }
-
-    #rsvp .rsvp-container {
         padding: 0;
-    }
-    
-    #rsvp .rsvp-container p {
-        font-size: 1rem;
-        line-height: 18pt;
-        padding: 10px;
-        margin-block: 20px;
-        width: unset;
+        padding-top: 20px;
     }
 }

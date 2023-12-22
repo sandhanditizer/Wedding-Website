@@ -20,10 +20,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
         <!-- Script upload -->
-        <script src="./Scripts/scroll.js"></script>
-        <script src="./Scripts/home_text_fade.js"></script>
         <script src="./Scripts/menu_button.js"></script>
+        <script src="./Scripts/scroll.js"></script>
+        <script src="./Scripts/countdown.js"></script>
+        <script src="./Scripts/home_text_fade.js"></script>
         <script src="./Scripts/gallery_size.js"></script>
+        <script src="./Scripts/buttons.js"></script>
+
     </head>
     <body style="margin: 0; padding: 0;">
         <!-- Menu (and button for smaller screens) -->
@@ -40,7 +43,7 @@
                 <li><a href="#rsvp">RSVP</a></li>
             </ul>
         </nav>
-
+        
         <!-- Home screen section -->
         <section id="home">
             <h1>
@@ -49,14 +52,16 @@
                 <span class="and-font">and&nbsp;&nbsp;</span>CLAIRE
                 <br>
                 <br>
-                <span class="date">-23 AUGUST 2024-</span>
+                <span class="date">23 AUGUST 2024</span>
+                <br>
+                <div id="countdown"></div>
             </h1>
         </section>        
-
+        
         <!-- Our story -->
         <div class="top-blurred-bar"></div>
         <section id="story">
-            <img src="Images/story.jpg" alt="Colored Story Image">
+            <img src="Images/story.JPG">
             <div class="story-container">
                 <h2>Our Story</h2>
                 <p>
@@ -109,12 +114,16 @@
                     <br><br>
                     The parking lot enterance is on located off of Taylor Ave. In the event that the venue parking lot becomes full, there is free street parking available (Kearney Ave and Taylor Ave).
                 </p>
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.514803745799!2d-87.8078933231914!3d42.713993412666525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880543107f3e2c4d%3A0xb2d777f2bb451316!2sThe%20Covenant%20at%20Murray%20Mansion!5e0!3m2!1sen!2sus!4v1697986781516!5m2!1sen!2sus" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <div class="google-maps">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.514803745799!2d-87.8078933231914!3d42.713993412666525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880543107f3e2c4d%3A0xb2d777f2bb451316!2sThe%20Covenant%20at%20Murray%20Mansion!5e0!3m2!1sen!2sus!4v1697986781516!5m2!1sen!2sus" 
+                    allowfullscreen="true" 
+                    title="Google Map"
+                    loading="lazy" 
+                    scrolling="no"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
             </div>
             <h3>Evening Schedule</h3>
             <table>
@@ -177,7 +186,7 @@
             <h3>Lodging</h3>
             <div class="lodging-container">
                 <div class="quadrant">
-                    <a href="https://www.hotelverdant.com" class="hotels">
+                    <button class="hotels-button" type="button" id="quad1-button">
                         <strong>
                             &nbsp;&nbsp;&nbsp;&nbsp;-- Hotel Verdant --&nbsp;&nbsp;&nbsp;&nbsp;
                         </strong>
@@ -187,10 +196,10 @@
                         500 Main Street, 
                         <br>
                         Racine, Wisconsin 53403
-                    </a>
+                    </button>
                 </div>
                 <div class="quadrant">
-                    <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotels">
+                    <button class="hotels-button" type="button" id="quad2-button">
                         <strong>
                             -- Racine Harbourwalk --
                         </strong>
@@ -200,10 +209,10 @@
                         223 Gaslight Circle, 
                         <br>
                         Racine, Wisconsin 53403
-                    </a>
+                    </button>
                 </div>
                 <div class="quadrant">
-                    <a href="https://www.redlion.com/americas-best-value-inn/wi/racine/americas-best-value-inn-suites-racine" class="hotels">
+                    <button class="hotels-button" type="button" id="quad3-button">
                         <strong>
                             -- The Americas Best Inn & Suite --
                         </strong>
@@ -213,10 +222,10 @@
                         5419 Durand Avenue, 
                         <br>
                         Racine, Wisconsin 53406
-                    </a>
+                    </button>
                 </div>
                 <div class="quadrant">
-                    <a href="https://www.wyndhamhotels.com/travelodge/racine-wisconsin/travelodge-waters-edge-hotel-racine/overview" class="hotels">
+                    <button class="hotels-button" type="button" id="quad4-button">
                         <strong>
                             &nbsp;-- Water’s Edge Hotel --&nbsp;
                         </strong>
@@ -226,67 +235,10 @@
                         3700 Northwestern Ave, 
                         <br>
                         Racine, Wisconsin 53405
-                    </a>
+                    </button>
                 </div>
             </div>   
             <p class="note">Click a hotel to explore</p>    
-            <!-- <h3>Wedding Party</h3>
-            <div class="party-container">
-                <div class="quadrant left1">
-                    <img src="" alt="Jacob Treitsch" class="party-img">
-                    <figcaption>
-                        <strong>Jacob Treitsch</strong> - Brother of the Bride
-                    </figcaption>
-                </div>
-                <div class="quadrant left2">
-                    <img src="" alt="Olivia Staples" class="party-img">
-                    <figcaption>
-                        <strong>Olivia Staples</strong> - Cousin of the Bride
-                    </figcaption>
-                </div>
-                <div class="quadrant left3">
-                    <img src="" alt="Katie Hendricksen" class="party-img">
-                    <figcaption>
-                        <strong>Katie Hendricksen</strong> - Cousin of the Bride
-                    </figcaption>
-                </div>
-                <div class="quadrant left4">
-                    <img src="" alt="Savannah Bland" class="party-img">
-                    <figcaption>
-                        <strong>Savannah Bland</strong> - Best friend of the Bride
-                    </figcaption>
-                </div>
-                <div class="quadrant left5">
-                    <img src="" alt="Madi Odell" class="party-img">
-                    <figcaption>
-                        <strong>Madi Odell</strong> - Best friend of the Bride
-                    </figcaption>
-                </div>
-                <div class="quadrant right1">
-                    <img src="Images/Wedding Party/levi.jpeg" alt="Levi Kline" class="party-img">
-                    <figcaption>
-                        <strong>Levi Kline</strong> - Brother of the Groom
-                    </figcaption>
-                </div>
-                <div class="quadrant right2">
-                    <img src="Images/Wedding Party/ben.jpeg" alt="Ben Bateman" class="party-img">
-                    <figcaption>
-                        <strong>Ben Bateman</strong> - Best Friend of the Groom
-                    </figcaption>
-                </div>
-                <div class="quadrant right3">
-                    <img src="Images/Wedding Party/connor.heic" alt="Connor Boinski" class="party-img">
-                    <figcaption>
-                        <strong>Connor Boinski</strong> - Best Friend of the Groom
-                    </figcaption>
-                </div>
-                <div class="quadrant right4">
-                    
-                </div>
-                <div class="quadrant right4">
-
-                </div>
-            </div> -->
         </section>
 
         <!-- Display of our engagement photos -->
@@ -343,26 +295,29 @@
             <div class="registry-container">
                 <p>
                     Being able to celebrate with you is an incredible blessing of its own. 
-                    If you are feeling generious, we do have a gift registry and general wedding fund that will be going towards necessities for our new life together.
+                    However, if you are feeling generious, we do have a gift registry and general expenses fund that will be going towards necessities for our new life together.
                 </p>
                 <div class="registry-button-container">
-                    <button class="registry-button">Wedding Fund</button>
-                    <button class="registry-button">Gift Catalog</button>         
+                    <button class="registry-button" type="button" id="gift-button">Gift Registry</button>
+                    <button class="registry-button" type="button" id="fund-button">General Fund</button>
                 </div>  
             </div>
         </section>
 
         <!-- Allows an invitee to rsvp -->
-        <div class="top-blurred-bar"></div>
         <section id="rsvp">
-            <h2>RSVP</h2>
-            <div class="rsvp-container">
-                <p>
-                    If you plan on celebrating with us, RSVP with the link below!
-                </p>
-                <div class="rsvp-button-container">
-                    <button class="rsvp-button">RSVP</button>    
-                </div>  
+            <div class="form">
+                <iframe
+                title="Kline Wedding RSVP"
+                onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true"
+                allowfullscreen="true"
+                allow="geolocation; microphone; camera"
+                src="https://form.jotform.com/233505734965059"
+                frameborder="0"
+                scrolling="no"
+                >
+              </iframe>
             </div>
         </section>
 

@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #fff;
     padding: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
 }
 
 #registry h2 {
@@ -41,6 +41,7 @@
 }
 
 #registry .registry-button {
+    font-family: 'Header';
     background-color: rgba(168, 60, 6, 0.6);
     color: #fff;
     border: none;
@@ -62,6 +63,7 @@
     #registry {
         padding: 10px;
         padding-block: 35px;
+        padding-bottom: 0;
     }
 
     #registry h2 {
@@ -78,5 +80,9 @@
         padding: 10px;
         margin-block: 20px;
         width: unset;
+    }
+
+    #registry .registry-button {
+        z-index: 100;
     }
 }
