@@ -1,21 +1,21 @@
 .top-blurred-bar {
     position: absolute;
-    width: 100%;
     background: linear-gradient(#fff, #fefaee);
+    width: 100%;
     height: 40px;
 }
 
 .bottom-blurred-bar {
     position: absolute;
-    width: 100%;
     background: linear-gradient(#fefaee, transparent);
+    width: 100%;
     height: 40px;
 }
 
 footer {
     color: #5c5442;
     background-color: #fff;
-    text-align: left;
+    text-align: center;
     padding: 10px;
 }
 
@@ -32,4 +32,122 @@ footer {
     font-family: 'And';
     src: url('../Fonts/Your-Beloved.ttf') format('truetype'),
     url('../Fonts/Your-Beloved.woff') format('woff');
+}
+
+/* ---------- Navigation Bar ---------- */
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    text-align-last: center;
+    justify-content: center;
+    margin: 7px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: block;
+    font-family: 'Header';
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #5c5442;
+    transition: color 0.3s;
+    margin-inline: 40px;
+}
+
+nav a:hover {
+    color: #a83c06;
+}
+
+nav li:last-child a {
+    color: #fff;
+    background-color: rgba(168, 60, 6, 0.6);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    padding-inline: 30px;
+}
+
+nav li:last-child a:hover {
+    background-color: #a83c06;
+}
+
+#menu-button {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    nav {
+        z-index: 100;
+        backdrop-filter: unset;
+        -webkit-backdrop-filter: unset;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        background: #fff;
+        transform: translateY(-50%); /* Center the options on any small screen */
+        top: 50%;
+        left: 0;
+        right: 0;
+        padding: 0;
+        padding-block: 100%;
+        margin: 0;
+    }
+    
+    nav a {
+        width: 100%; /* Full width for dropdown links */
+        block-size: 60px;
+        font-size: 2rem;
+        text-align: center; /* Center the text */
+        line-height: 60px;
+        padding-block: 10px;
+        margin: 0;
+    }
+
+    nav li:last-child a {
+        width: 30%;
+        padding: 0;
+        margin-inline: auto;
+        margin-top: 30px;
+    }
+    
+    #menu-button {
+        z-index: 1000;
+        display: block;
+        position: fixed;
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+        right: 30px;
+        bottom: 30px;
+        padding: 0;
+    }
+    
+    #menu-button i {
+        color: rgba(92, 84, 66, 0.7);
+        font-size: 2rem;
+    }
+    
+    .show-menu {
+        display: block; /* Show the dropdown when the "menu" button is clicked */
+    }
 }

@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
         menuButton.addEventListener('click', function () {
             if (document.querySelector('nav ul').classList.contains('show-menu')) {
                 hideMenu();
-                location.reload(); //reset z-indexes
             } else {
                 toggleMenu();
             }

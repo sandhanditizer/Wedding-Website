@@ -1,9 +1,9 @@
 #story {
-    background-color: #fefaee;
     display: flex;
+    background-color: #fefaee;
+    justify-content: space-evenly;
     padding: 40px;
     padding-bottom: 0;
-    justify-content: space-evenly;
 }
 
 #story img {
@@ -14,36 +14,34 @@
 }
 
 #story .story-container {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 60%;
 }
 
 #story h2 {
+    font-family: 'Header';
     color: #5c5442;
     font-size: 4rem;
-    font-family: 'Header';
     letter-spacing: 10px;
+    text-align: center;
+    padding: 0;
     margin: 0;
     margin-bottom: 20px;
-    padding: 0;
-    text-align: center;
 }
 
 #story .story-container p {
+    font-family: 'Header';
+    color: #5c5442;
     font-size: 1.3rem;
     line-height: 25pt;
-    font-family: 'header';
     text-align: center;
-    color: #5c5442;
-    margin: 0px;
-    padding: 20px;
     box-shadow: 0 0 10px rgba(168, 60, 6, 0.8);
     background-color: #fff;
+    padding: 20px;
+    margin: 0;
 }
-
-/* -------------------------- Smaller devices ----------------------------*/
 
 @media (max-width: 1300px) {
     #story {
@@ -58,6 +56,7 @@
 
     #story .story-container {
         width: 100%;
+        padding-bottom: 10px;
     }
 
     #story h2 {

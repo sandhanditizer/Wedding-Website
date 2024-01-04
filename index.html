@@ -8,7 +8,6 @@
         
         <!-- Style upload -->
         <link rel="stylesheet" href="./Styles/other.css">
-        <link rel="stylesheet" href="./Styles/nav_bar.css">
         <link rel="stylesheet" href="./Styles/home.css">
         <link rel="stylesheet" href="./Styles/story.css">
         <link rel="stylesheet" href="./Styles/info.css">
@@ -20,18 +19,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
         <!-- Script upload -->
-        <script src="./Scripts/menu_button.js"></script>
-        <script src="./Scripts/scroll.js"></script>
-        <script src="./Scripts/countdown.js"></script>
-        <script src="./Scripts/home_text_fade.js"></script>
-        <script src="./Scripts/gallery_size.js"></script>
-        <script src="./Scripts/buttons.js"></script>
+        <script async src="./Scripts/home_text.js"></script>
+        <script defer src="./Scripts/menu_button.js"></script>
+        <script defer src="./Scripts/scroll.js"></script>
+        <script defer src="./Scripts/buttons.js"></script>
+        <script defer src="./Scripts/gallery_size.js"></script>
 
     </head>
     <body style="margin: 0; padding: 0;">
-        <!-- Menu (and button for smaller screens) -->
         <button id="menu-button">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- Menu (and button for smaller screens) -->
         </button>
         <nav>
             <ul>
@@ -44,12 +41,14 @@
             </ul>
         </nav>
         
-        <!-- Home screen section -->
         <section id="home">
+            <img src="Images/home2.JPG" alt="Story page image" class="home-phone-img">
             <h1>
                 ZACHARIAH
                 <br>
-                <span class="and-font">and&nbsp;&nbsp;</span>CLAIRE
+                <span class="and-font">and</span>
+                <br>
+                CLAIRE
                 <br>
                 <br>
                 <span class="date">23 AUGUST 2024</span>
@@ -58,10 +57,9 @@
             </h1>
         </section>        
         
-        <!-- Our story -->
         <div class="top-blurred-bar"></div>
         <section id="story">
-            <img src="Images/story.JPG">
+            <img src="Images/story.JPG" alt="Story page image">
             <div class="story-container">
                 <h2>Our Story</h2>
                 <p>
@@ -78,9 +76,16 @@
         </section>
         <div class="bottom-blurred-bar"></div>
 
-        <!-- Information section about venue and schedule -->
         <section id="info">
             <h2>Information</h2>
+            <h3>Our Colors</h3>
+            <div class="color-container">
+                <div class="color-quadrant" style="background: radial-gradient(#ffb19c, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#e389af, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#e39974, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#aec8e5, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#e0d5f3, #fff);"></div>
+            </div>
             <div class="large-screen">
                 <h3>
                     Location | <span class="location-name">The Covenant at Murray Mansion</span>
@@ -125,6 +130,62 @@
                     ></iframe>
                 </div>
             </div>
+            <h3>Lodging</h3>
+            <div class="lodging-container">
+                <div class="lodge-quadrant">
+                    <button class="hotels-button" type="button" id="quad1-button">
+                        <strong>
+                            &nbsp;&nbsp;&nbsp;&nbsp;-- Hotel Verdant --&nbsp;&nbsp;&nbsp;&nbsp;
+                        </strong>
+                        <br><br>
+                        ~6 minute drive
+                        <br><br>
+                        500 Main Street, 
+                        <br>
+                        Racine, Wisconsin 53403
+                    </button>
+                </div>
+                <div class="lodge-quadrant">
+                    <button class="hotels-button" type="button" id="quad2-button">
+                        <strong>
+                            -- Racine Harbourwalk --
+                        </strong>
+                        <br><br>
+                        ~7 minute drive
+                        <br><br>
+                        223 Gaslight Circle, 
+                        <br>
+                        Racine, Wisconsin 53403
+                    </button>
+                </div>
+                <div class="lodge-quadrant">
+                    <button class="hotels-button" type="button" id="quad3-button">
+                        <strong>
+                            -- The America's Best Inn --
+                        </strong>
+                        <br><br>
+                        ~7 minute drive
+                        <br><br>
+                        5419 Durand Avenue, 
+                        <br>
+                        Racine, Wisconsin 53406
+                    </button>
+                </div>
+                <div class="lodge-quadrant">
+                    <button class="hotels-button" type="button" id="quad4-button">
+                        <strong>
+                            &nbsp;-- Water’s Edge Hotel --&nbsp;
+                        </strong>
+                        <br><br>
+                        ~8 minute drive
+                        <br><br>
+                        3700 Northwestern Ave, 
+                        <br>
+                        Racine, Wisconsin 53405
+                    </button>
+                </div>
+            </div>   
+            <p class="note">Click a hotel to explore</p> 
             <h3>Evening Schedule</h3>
             <table>
                 <tr>
@@ -183,65 +244,8 @@
                     <td></td>
                 </tr>
             </table>
-            <h3>Lodging</h3>
-            <div class="lodging-container">
-                <div class="quadrant">
-                    <button class="hotels-button" type="button" id="quad1-button">
-                        <strong>
-                            &nbsp;&nbsp;&nbsp;&nbsp;-- Hotel Verdant --&nbsp;&nbsp;&nbsp;&nbsp;
-                        </strong>
-                        <br><br>
-                        ~6 minute drive
-                        <br><br>
-                        500 Main Street, 
-                        <br>
-                        Racine, Wisconsin 53403
-                    </button>
-                </div>
-                <div class="quadrant">
-                    <button class="hotels-button" type="button" id="quad2-button">
-                        <strong>
-                            -- Racine Harbourwalk --
-                        </strong>
-                        <br><br>
-                        ~7 minute drive
-                        <br><br>
-                        223 Gaslight Circle, 
-                        <br>
-                        Racine, Wisconsin 53403
-                    </button>
-                </div>
-                <div class="quadrant">
-                    <button class="hotels-button" type="button" id="quad3-button">
-                        <strong>
-                            -- The Americas Best Inn & Suite --
-                        </strong>
-                        <br><br>
-                        ~7 minute drive
-                        <br><br>
-                        5419 Durand Avenue, 
-                        <br>
-                        Racine, Wisconsin 53406
-                    </button>
-                </div>
-                <div class="quadrant">
-                    <button class="hotels-button" type="button" id="quad4-button">
-                        <strong>
-                            &nbsp;-- Water’s Edge Hotel --&nbsp;
-                        </strong>
-                        <br><br>
-                        ~8 minute drive
-                        <br><br>
-                        3700 Northwestern Ave, 
-                        <br>
-                        Racine, Wisconsin 53405
-                    </button>
-                </div>
-            </div>   
-            <p class="note">Click a hotel to explore</p>    
         </section>
 
-        <!-- Display of our engagement photos -->
         <div class="top-blurred-bar"></div>
         <section id="gallery">
             <h2>Gallery</h2>
@@ -289,7 +293,6 @@
         </section>
         <div class="bottom-blurred-bar"></div>
 
-        <!-- Links to our fund and amazon gift selection -->
         <section id="registry">
             <h2>Registry</h2>
             <div class="registry-container">
@@ -304,7 +307,6 @@
             </div>
         </section>
 
-        <!-- Allows an invitee to rsvp -->
         <section id="rsvp">
             <div class="form">
                 <iframe

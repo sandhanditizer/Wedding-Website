@@ -1,13 +1,15 @@
+window.addEventListener('load', function () {
+    setTimeout(function() {
+        document.getElementById('home').classList.add('h1-visible'); // After any delay, show text
+    }, 0); // Delay
+});
+
 // Set the date we're counting down to
 const countDownDate = new Date("Aug 23, 2024 17:30:00").getTime();
-
-// Update the countdown every 1 second
 const x = setInterval(function() {
-    // Get the current date and time
-    const now = new Date().getTime();
+    const now = new Date().getTime(); // Get the current date and time
 
-    // Calculate the remaining time
-    const distance = countDownDate - now;
+    const distance = countDownDate - now; // Calculate the remaining time
 
     // Calculate days, hours, minutes, and seconds
     const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(3, '0');
@@ -23,4 +25,4 @@ const x = setInterval(function() {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "EXPIRED";
     }
-}, 1000);
+}, 1000); // Update the countdown every 1 second

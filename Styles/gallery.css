@@ -38,13 +38,15 @@
     color: #5c5442;
     text-align: center;
     margin: 0;
+    margin-bottom: 10px;
+
 }
 
 #gallery .gallery-button-container {
     display: flex;
     justify-content: center;
     margin: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #gallery .gallery-button {
