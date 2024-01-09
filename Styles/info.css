@@ -3,7 +3,6 @@
     flex-direction: column;
     background-color: #fff;
     padding: 40px; 
-    padding-bottom: 0;
 }
 
 #info h2 {
@@ -135,16 +134,16 @@
 #info table {
     border-collapse: collapse;
     margin: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 #info th, #info td {
+    font-family: 'Header';
+    font-size: 1.3rem;
     white-space: normal;
     word-wrap: break-word;
     border: 1px solid #ddd;
     color: #5c5442;
-    font-family: 'Header';
-    font-size: 1.3rem;
     padding: 7px;
 }
 
@@ -154,14 +153,12 @@
 }
 
 #info td {
-    text-align: left;
+    text-align: center;
 }
 
 #info tr:hover {
     background-color: rgba(168, 60, 6, 0.1);
 }
-
-/* -------------------------- Smaller devices -------------------------- */
 
 @media (max-width: 1300px) {
     #info {

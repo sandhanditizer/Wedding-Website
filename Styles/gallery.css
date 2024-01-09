@@ -4,17 +4,16 @@
     align-items: center;
     background-color: #fefaee;
     padding: 40px;
-    padding-bottom: 0;
 }
 
 #gallery h2 {
+    font-family: 'Header';
+    text-align: center;
     color: #5c5442;
     font-size: 4rem;
-    font-family: 'Header';
     letter-spacing: 10px;
-    margin: 0;
     padding: 0;
-    text-align: center;
+    margin: 0;
 }
 
 #gallery .gallery {
@@ -35,38 +34,36 @@
 
 #gallery .button-note {
     font-family: 'Header';
-    color: #5c5442;
     text-align: center;
+    color: #5c5442;
     margin: 0;
     margin-bottom: 10px;
-
 }
 
 #gallery .gallery-button-container {
     display: flex;
     justify-content: center;
     margin: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 #gallery .gallery-button {
     font-family: 'Header';
-    background-color: rgba(168, 60, 6, 0.6);
+    font-size: 1rem;
     color: #ffffff;
+    cursor: pointer;
     border: none;
+    border-radius: 8px;
+    background-color: rgba(168, 60, 6, 0.6);
+    transition: background-color 0.3s;
     padding: 10px 20px;
     margin: 5px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    margin-bottom: 0;
 }
 
 #gallery .gallery-button:hover {
     background-color: #a83c06;
 }
-
-/* -------------------------- Smaller devices -------------------------- */
 
 @media (max-width: 1300px) {
     #gallery {
