@@ -16,7 +16,10 @@
 }
 
 #registry .registry-container {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #registry .registry-container p {
@@ -29,7 +32,6 @@
     background-color: #fff;
     width: 50%;
     padding: 20px;
-    margin: 0 auto;
     margin-block: 40px;
 }
 

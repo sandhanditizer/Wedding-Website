@@ -163,7 +163,7 @@
 @media (max-width: 1300px) {
     #info {
         padding: 10px;
-        padding-top: 40px;
+        padding-top: 35px;
     }
     
     #info h2 {
@@ -177,22 +177,7 @@
         padding-top: 30px;
     }
 
-    #info .location-name {
-        display: block;
-        text-align: center;
-        font-size: 1rem;
-        padding-block: 10px;
-    }
-
-    #info .large-screen {
-        display: none;
-    }
-    
-    #info .small-screen {
-        display: block;
-    }
-
-    /* -------------------------- Dress Code -------------------------- */
+    /* -------------------------- Color Code -------------------------- */
 
     #info .color-container {
         margin: 0;
@@ -207,8 +192,9 @@
 
     #info .location-container {
         display: block;
-        margin: 0;
         flex-wrap: unset;
+        margin: 0;
+        margin-top: 15px;
     }
 
     #info .location-container p {
@@ -225,6 +211,26 @@
         height: 300px;
     }
 
+    /* -------------------------- Lodging -------------------------- */
+
+    #info .lodging-container {
+        margin: 0;
+    }
+
+    #info .lodge-quadrant {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    #info .hotels-button {
+        font-size: 1rem;
+    }
+
+    #info .note {
+        margin: 0;
+        margin-block: 10px;
+    }
+
     /* -------------------------- Itinerary -------------------------- */
 
     #info table {
@@ -235,26 +241,5 @@
     #info th, #info td {
         font-size: 1rem;
         padding: 5px;
-    }
-
-    /* -------------------------- Lodging -------------------------- */
-
-    #info .lodging-container {
-        margin: 0;
-    }
-
-    #info .lodge-quadrant {
-        font-size: 1rem;
-        padding: 0;
-        padding-top: 10px;
-    }
-
-    #info .hotels-button {
-        font-size: 1rem;
-    }
-
-    #info .note {
-        margin: 0;
-        margin-block: 10px;
     }
 }
