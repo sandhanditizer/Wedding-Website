@@ -64,6 +64,10 @@
     margin: 20px;
 }
 
+#info .venue-name {
+    font-size: 1.6rem;
+}
+
 #info .google-maps {
     position: relative;
     overflow: hidden;
@@ -184,8 +188,8 @@
     }
 
     #info .color-quadrant {
-        margin-inline: 10px;
-        margin-top: 10px;
+        margin-inline: 20px;
+        margin-top: 20px;
     }
 
     /* -------------------------- Location Info -------------------------- */
@@ -202,6 +206,10 @@
         line-height: 18pt;
         padding: 10px;
         margin: 0;
+    }
+
+    #info .venue-name {
+        font-size: 1.3rem;
     }
 
     #info .google-maps {
