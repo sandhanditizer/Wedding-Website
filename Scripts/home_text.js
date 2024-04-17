@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 });
 
 // Set the date we're counting down to
-const countDownDate = new Date("Aug 23, 2024 17:30:00").getTime();
+const countDownDate = new Date("Aug 23, 2024 16:30:00").getTime();
 const x = setInterval(function() {
     const now = new Date().getTime(); // Get the current date and time
 

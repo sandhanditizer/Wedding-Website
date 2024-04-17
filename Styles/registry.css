@@ -50,8 +50,7 @@
     font-size: 1rem;
     transition: background-color 0.3s;
     padding: 10px 20px;
-    margin: 5px;
-    margin-bottom: 0;
+    margin-inline: 10px;
 }
 
 #registry .registry-button:hover {
@@ -67,6 +66,7 @@
 
     #registry h2 {
         font-size: 3rem;
+        margin-bottom: 10px;
     }
 
     #registry .registry-container {
@@ -76,8 +76,7 @@
     #registry .registry-container p {
         font-size: 1rem;
         line-height: 18pt;
-        padding: 10px;
-        margin-block: 20px;
+        margin: 20px;
         width: unset;
     }
 

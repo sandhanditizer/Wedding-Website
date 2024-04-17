@@ -21,11 +21,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
         <!-- Script upload -->
-        <script async src="./Scripts/home_text.js"></script>
+        <script defer src="./Scripts/home_text.js"></script>
         <script defer src="./Scripts/menu_button.js"></script>
         <script defer src="./Scripts/scroll.js"></script>
         <script defer src="./Scripts/buttons.js"></script>
         <script defer src="./Scripts/gallery_size.js"></script>
+        <script defer src="./Scripts/save_location.js"></script>
 
     </head>
     <body style="margin: 0; padding: 0;">
@@ -80,13 +81,6 @@
 
         <section id="info">
             <h2>Information</h2>
-            <h3>Our Colors</h3>
-            <div class="color-container">
-                <div class="color-quadrant" style="background: radial-gradient(#f15a70, #fff);"></div>
-                <div class="color-quadrant" style="background: radial-gradient(#ed9154a9, #fff);"></div>
-                <div class="color-quadrant" style="background: radial-gradient(#b2d5f6, #fff);"></div>
-                <div class="color-quadrant" style="background: radial-gradient(#faa9b1, #fff);"></div>
-            </div>
             <h3>
                 Location
             </h3>
@@ -97,20 +91,19 @@
                     </strong>
                     <br>
                     <br>
-                    <strong>
-                        CEREMONY & RECEPTION ADDRESS
-                    </strong>
-                    <br>
-                    <br>
-                    2219 Washington Ave, Racine, WI 53405
-                    <br>
                     <br>
                     <strong>
-                        PARKING
+                        Ceremony & Reception Address
                     </strong>
                     <br>
+                    2219 Washington Avenue Racine, Wisconsin 53405
                     <br>
-                    Parking is available at the venue.
+                    <br>
+                    <strong>
+                        Parking
+                    </strong>
+                    <br>
+                    Parking is available on the south end of the venue located off Taylor Avenue. 
                 </p>
                 <div class="google-maps">
                     <iframe 
@@ -123,6 +116,49 @@
                     ></iframe>
                 </div>
             </div>
+            <h3>Evening Schedule</h3>
+            <table>
+                <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                    <td>4:15</td>
+                    <td>Guest Arrival</td>
+                    <td>Enter through the main doors on the south side of the venue where the parking lot is.</td>
+                </tr>
+                <tr>
+                    <td>4:30</td>
+                    <td>Ceremony</td>
+                    <td>Officiated by Mike Olson.</td>
+                </tr>
+                <tr>
+                    <td>5:00</td>
+                    <td>Cocktail Hour</td>
+                    <td>Complementary drinks, charcuterie, and music will be inside Murray Mansion.</td>
+                </tr>
+                <tr>
+                    <td>6:30</td>
+                    <td>Dinner</td>
+                    <td>Be prepared to give your <strong>best joke</strong>!</td>
+                </tr>
+                <tr>
+                    <td>8:00</td>
+                    <td>Open Dance Floor</td>
+                    <td>The DJ will accept music requests.</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Bar Closes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Final Songs</td>
+                    <td></td>
+                </tr>
+            </table>
             <h3>Lodging</h3>
             <div class="lodging-container">
                 <div class="lodge-quadrant">
@@ -179,49 +215,17 @@
                 </div>
             </div>   
             <p class="note">Click a hotel to explore</p> 
-            <h3>Evening Schedule</h3>
-            <table>
-                <tr>
-                <th>Time</th>
-                <th>Event</th>
-                <th>Description</th>
-                </tr>
-                <tr>
-                    <td>4:15</td>
-                    <td>Guest Arrival</td>
-                    <td>Enter through the main doors on the south side of the venue where the parking lot is.</td>
-                </tr>
-                <tr>
-                    <td>4:30</td>
-                    <td>Ceremony</td>
-                    <td>Officiated by Mike Olson.</td>
-                </tr>
-                <tr>
-                    <td>5:00</td>
-                    <td>Cocktail Hour</td>
-                    <td>Complementary drinks, charcuterie, and music will be inside Murray Mansion.</td>
-                </tr>
-                <tr>
-                    <td>6:30</td>
-                    <td>Dinner</td>
-                    <td>Be prepared to give your <strong>best joke</strong>!</td>
-                </tr>
-                <tr>
-                    <td>8:00</td>
-                    <td>Open Dance Floor</td>
-                    <td>The DJ will accept music requests.</td>
-                </tr>
-                <tr>
-                    <td>10:00</td>
-                    <td>Bar Closes</td>
-                    <td>Drink up!</td>
-                </tr>
-                <tr>
-                    <td>11:00</td>
-                    <td>Final Songs</td>
-                    <td></td>
-                </tr>
-            </table>
+            <h3>Our Colors</h3>
+            <div class="color-container">
+                <div class="color-quadrant" style="background: radial-gradient(#f15a70, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#ed9154a9, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#b2d5f6, #fff);"></div>
+                <div class="color-quadrant" style="background: radial-gradient(#faa9b1, #fff);"></div>
+                <p>
+                    Get ready to bloom alongside us at our wedding! 
+                    Dress in your brightest and most floral attire to match the joyful atmosphere.
+                </p>
+            </div>
         </section>
 
         <div class="top-blurred-bar"></div>
@@ -276,7 +280,7 @@
             <div class="registry-container">
                 <p>
                     Being able to celebrate with you is an incredible blessing of its own. 
-                    However, if you are feeling generious, we do have a gift registry and general expenses fund that will be going towards necessities for our new life together.
+                    However, if you are feeling generous, we do have a gift registry and general expenses fund that will be going towards necessities for our new life together.
                 </p>
                 <div class="registry-button-container">
                     <button class="registry-button" type="button" id="gift-button">Gift Registry</button>
@@ -288,7 +292,6 @@
         <section id="rsvp">
             <iframe
                 title="Kline Wedding RSVP"
-                onload="window.parent.scrollTo(0,0)"
                 allowtransparency="true"
                 allowfullscreen="true"
                 allow="geolocation; microphone; camera"

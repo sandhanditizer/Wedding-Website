@@ -25,23 +25,6 @@
     padding: 0;
 }
 
-/* -------------------------- Color Code -------------------------- */
-
-#info .color-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-    margin-bottom: 40px;
-}
-
-#info .color-quadrant {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-inline: 30px;
-}
-
 /* -------------------------- Location Info -------------------------- */
 
 #info .location-container {
@@ -84,6 +67,37 @@
     border: 0;
 }  
 
+/* -------------------------- Itinerary -------------------------- */
+
+#info table {
+    border-collapse: collapse;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+#info th, #info td {
+    font-family: 'Header';
+    font-size: 1.3rem;
+    white-space: normal;
+    word-wrap: break-word;
+    border: 1px solid #ddd;
+    color: #5c5442;
+    padding: 10px;
+}
+
+#info th {
+    text-align: center;
+    background-color: rgba(168, 60, 6, 0.4);
+}
+
+#info td {
+    text-align: center;
+}
+
+#info tr:hover {
+    background-color: rgba(168, 60, 6, 0.1);
+}
+
 /* -------------------------- Lodging -------------------------- */
 
 #info .lodging-container {
@@ -116,7 +130,8 @@
     cursor: pointer;
     border: none;
     width: 100%;
-    padding: 10px 20px;
+    padding-block: 10px;
+    padding-inline: 20px;
     margin: 5px;
 }
 
@@ -133,35 +148,34 @@
     margin-bottom: 40px;
 }
 
-/* -------------------------- Itinerary -------------------------- */
+/* -------------------------- Color Code -------------------------- */
 
-#info table {
-    border-collapse: collapse;
-    margin: 20px;
-    margin-bottom: 0;
+#info .color-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#info th, #info td {
+#info .color-quadrant {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-inline: 30px;
+}
+
+#info .color-container p {
+    flex: 1;
     font-family: 'Header';
     font-size: 1.3rem;
-    white-space: normal;
-    word-wrap: break-word;
-    border: 1px solid #ddd;
     color: #5c5442;
-    padding: 7px;
-}
-
-#info th {
     text-align: center;
-    background-color: rgba(168, 60, 6, 0.4);
-}
-
-#info td {
-    text-align: center;
-}
-
-#info tr:hover {
-    background-color: rgba(168, 60, 6, 0.1);
+    line-height: 25pt;
+    box-shadow: 0 0 10px rgba(168, 60, 6, 0.8);
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 40px;
 }
 
 @media (max-width: 1300px) {
@@ -173,23 +187,13 @@
     #info h2 {
         text-align: center;
         font-size: 2.5rem;
+        padding-bottom: 20px;
     }
 
     #info h3 {
         text-align: center;
         font-size: 1.6rem;
-        padding-top: 30px;
-    }
-
-    /* -------------------------- Color Code -------------------------- */
-
-    #info .color-container {
-        margin: 0;
-    }
-
-    #info .color-quadrant {
-        margin-inline: 20px;
-        margin-top: 20px;
+        padding-top: 10px;
     }
 
     /* -------------------------- Location Info -------------------------- */
@@ -197,14 +201,13 @@
     #info .location-container {
         display: block;
         flex-wrap: unset;
-        margin: 0;
-        margin-top: 15px;
+        margin: 20px;
     }
 
     #info .location-container p {
+        flex: unset;
         font-size: 1rem;
         line-height: 18pt;
-        padding: 10px;
         margin: 0;
     }
 
@@ -219,10 +222,21 @@
         height: 300px;
     }
 
+    /* -------------------------- Itinerary -------------------------- */
+
+    #info table {
+        margin: 20px;
+    }
+
+    #info th, #info td {
+        font-size: 1rem;
+    }
+
     /* -------------------------- Lodging -------------------------- */
 
     #info .lodging-container {
-        margin: 0;
+        margin: 20px;
+        margin-bottom: 0;
     }
 
     #info .lodge-quadrant {
@@ -232,22 +246,32 @@
 
     #info .hotels-button {
         font-size: 1rem;
+        padding-top: 0;
+        padding-bottom: 20px;
     }
 
     #info .note {
         margin: 0;
-        margin-block: 10px;
+        margin-bottom: 20px;
     }
 
-    /* -------------------------- Itinerary -------------------------- */
+    /* -------------------------- Color Code -------------------------- */
 
-    #info table {
-        margin: 0;
-        margin-top: 10px;
+    #info .color-container {
+        margin: 20px;
+        margin-bottom: 0;
     }
 
-    #info th, #info td {
+    #info .color-quadrant {
+        margin-inline: 20px;
+        margin-bottom: 20px;
+    }
+
+    #info .color-container p {
+        flex: unset;
         font-size: 1rem;
-        padding: 5px;
+        line-height: 18pt;
+        margin: 0;
+        width: 100%;
     }
 }

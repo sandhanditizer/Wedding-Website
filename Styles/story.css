@@ -59,12 +59,13 @@
 
     #story h2 {
         font-size: 3rem;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     #story .story-container p {
         font-size: 1rem;
         line-height: 18pt;
-        padding: 10px;
+        margin: 20px;
+        margin-bottom: 0;
     }
 }
