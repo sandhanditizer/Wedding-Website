@@ -71,6 +71,7 @@
 
 #info table {
     border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(168, 60, 6, 0.8);
     margin: 20px;
     margin-bottom: 40px;
 }
@@ -80,7 +81,6 @@
     font-size: 1.3rem;
     white-space: normal;
     word-wrap: break-word;
-    border: 1px solid #ddd;
     color: #5c5442;
     padding: 10px;
 }
@@ -91,6 +91,7 @@
 }
 
 #info td {
+    border: 1px solid #5c544215; 
     text-align: center;
 }
 
