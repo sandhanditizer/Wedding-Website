@@ -138,12 +138,12 @@ nav li:last-child a:hover {
         border: none;
         cursor: pointer;
         right: 30px;
-        bottom: 30px;
+        top: 30px;
         padding: 0;
     }
     
     #menu-button i {
-        color: rgba(92, 84, 66, 0.7);
+        color: rgba(92, 84, 66, 0.8);
         font-size: 2rem;
     }
     
